@@ -4,7 +4,8 @@
 
 <p align="center">
   <a href="https://pypi.org/project/mkdocs-sorrow-theme/"><img src="https://img.shields.io/pypi/v/mkdocs-sorrow-theme" alt="PyPI version"></a>
-  <a href="https://mhs-20.github.io/sorrow-mkdocs-theme/"><img src="https://github.com/MHS-20/sorrow-mkdocs-theme/actions/workflows/docs.yml/badge.svg" alt="Demo site deploy status"></a>
+  <a href="https://github.com/MHS-20/sorrow-mkdocs-theme/actions/workflows/docs.yml"><img src="https://github.com/MHS-20/sorrow-mkdocs-theme/actions/workflows/docs.yml/badge.svg" alt="Docs workflow status"></a>
+  <a href="https://mhs-20.github.io/sorrow-mkdocs-theme/"><img src="https://img.shields.io/badge/demo-GitHub%20Pages-7a1a2c" alt="Live demo"></a>
 </p>
 
 # mkdocs-sorrow-theme
