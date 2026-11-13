@@ -1,8 +1,8 @@
 /*
  * highlight.js colors for the Sorrow palette.
  * Scopes follow Omarchy's helix.toml.tpl syntax mapping, with Omarchy's
- * colorN names: color1 #8c2a40, color2 #9fa5a9, color3 #d9dbdc,
- * color4 #798186, color5 #c27a8b, color6 #a8566a, color8 #4b4e55.
+ * colorN names: color1 #7a1a2c, color2 #9fa5a9, color3 #d9dbdc,
+ * color4 #798186, color5 #a8495b, color6 #943a4c, color8 #4b4e55.
  */
 pre code.hljs {
   display: block;
@@ -50,12 +50,12 @@ code.hljs {
 .hljs-meta-keyword,
 .hljs-template-tag,
 .hljs-selector-pseudo {
-  color: #c27a8b;
+  color: #a8495b;
 }
 
 /* variable.parameter */
 .hljs-params {
-  color: #c27a8b;
+  color: #a8495b;
   font-style: italic;
 }
 
@@ -63,7 +63,7 @@ code.hljs {
 .hljs-regexp,
 .hljs-char.escape_,
 .hljs-template-variable {
-  color: #c27a8b;
+  color: #a8495b;
 }
 
 /* function, function.builtin, tag, label */
@@ -104,27 +104,27 @@ code.hljs {
 .hljs-symbol,
 .hljs-operator,
 .hljs-bullet {
-  color: #a8566a;
+  color: #943a4c;
 }
 
 /* variable.builtin */
 .hljs-variable.language_ {
-  color: #8c2a40;
+  color: #7a1a2c;
 }
 
 /* markup.heading.1 */
 .hljs-section {
-  color: #8c2a40;
+  color: #7a1a2c;
 }
 
 /* markup.bold, markup.italic */
 .hljs-strong {
-  color: #8c2a40;
+  color: #7a1a2c;
   font-weight: bold;
 }
 
 .hljs-emphasis {
-  color: #8c2a40;
+  color: #7a1a2c;
   font-style: italic;
 }
 
@@ -137,7 +137,7 @@ code.hljs {
 
 /* markup.quote */
 .hljs-quote {
-  color: #c27a8b;
+  color: #a8495b;
 }
 
 /* diff */
@@ -146,5 +146,5 @@ code.hljs {
 }
 
 .hljs-deletion {
-  color: #8c2a40;
+  color: #7a1a2c;
 }

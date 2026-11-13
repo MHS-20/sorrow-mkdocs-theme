@@ -317,18 +317,6 @@ wheels = [
 ]
 
 [[package]]
-name = "mkdocs-dracula-theme"
-version = "1.1.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "mkdocs" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/7c/1d/0e89ffe605208c92e3a756b1951f9be345b4cf67c8d236778ba33f9a0680/mkdocs_dracula_theme-1.1.0.tar.gz", hash = "sha256:c032fefce00be0dc4d269c90035aaedbc76303ecd995fdf1c072301016036200", size = 459281, upload-time = "2026-08-16T21:08:41.237Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/80/eb/889d95fce6a54ec694004e49865bc2a4c38f685233f80a1ed49d4b46e0b2/mkdocs_dracula_theme-1.1.0-py3-none-any.whl", hash = "sha256:aa848ca831e63fd7d0c83d3eb73c35effa93011eabb4a41db057a07faa2251b9", size = 466082, upload-time = "2026-08-16T21:08:39.593Z" },
-]
-
-[[package]]
 name = "mkdocs-get-deps"
 version = "0.2.2"
 source = { registry = "https://pypi.org/simple" }
@@ -351,14 +339,10 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "mkdocs" },
-    { name = "mkdocs-dracula-theme" },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "mkdocs", specifier = ">=1.6.1,<2" },
-    { name = "mkdocs-dracula-theme", specifier = ">=1.1.0,<1.2" },
-]
+requires-dist = [{ name = "mkdocs", specifier = ">=1.6.1,<2" }]
 
 [[package]]
 name = "packaging"

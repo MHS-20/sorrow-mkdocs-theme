@@ -1,8 +1,8 @@
 /*
- * Sorrow palette for the Dracula MkDocs theme.
- * Colors come from the Omarchy "sorrow" theme (colors.toml, resolved by
- * `omarchy-theme-color --all`). Each Dracula token is re-pointed at the
- * Sorrow color with the same role.
+ * Sorrow color tokens.
+ * Colors are based on the Omarchy "sorrow" theme (colors.toml, resolved by
+ * `omarchy-theme-color --all`), with darker reds. sorrow-ui.css and
+ * mkdocs.min.css read these tokens.
  */
 :root {
     --black: #0c0e10;          /* dark_background: sidebar, code blocks */
@@ -15,14 +15,20 @@
     --whiteSecondary: #d9dbdc;
     --disabled: #4b4e55;       /* muted */
 
-    --purple: #8c2a40;         /* accent */
-    --cyan: #a8566a;           /* cyan */
+    --purple: #7a1a2c;         /* accent */
+    --cyan: #943a4c;           /* cyan */
     --green: #9fa5a9;          /* green */
     --orange: #c9c2b4;         /* bright_yellow */
-    --pink: #c27a8b;           /* magenta */
-    --red: #b8384f;            /* bright_red */
+    --pink: #a8495b;           /* magenta */
+    --red: #a82a3c;            /* bright_red */
     --yellow: #d9dbdc;         /* yellow */
 
+    --gradientDegree: 135deg;
+    --accentColor: var(--purple);
+    --purple-cyan: linear-gradient(var(--gradientDegree), var(--purple) 0%, var(--cyan) 100%);
+    --yellow-pink: linear-gradient(var(--gradientDegree), var(--yellow) 0%, var(--pink) 100%);
+    --cyan-green: linear-gradient(var(--gradientDegree), var(--cyan) 0%, var(--green) 100%);
+    --pink-purple: linear-gradient(var(--gradientDegree), var(--pink) 0%, var(--purple) 100%);
     --glowColor: color-mix(in srgb, var(--white) 25%, transparent);
     --blackLight: color-mix(in srgb, var(--black) 5%, transparent);
     --greyLight: color-mix(in srgb, var(--grey) 5%, transparent);
@@ -113,18 +119,3 @@
     --yellowLight: color-mix(in srgb, var(--yellow) 5%, transparent);
 }
 
-/* Divider between sidebar and content shares the sidebar color. */
-.divider.drac-bg-purple-cyan {
-    background: var(--black);
-}
-
-/* Dracula hardcodes admonition title tints as rgba(); re-tint from the palette. */
-.admonition.note .admonition-title,.admonition.example .admonition-title { background: color-mix(in srgb, var(--purple) 15%, transparent); }
-.admonition.abstract .admonition-title,.admonition.summary .admonition-title,.admonition.tldr .admonition-title,.admonition.info .admonition-title { background: color-mix(in srgb, var(--cyan) 15%, transparent); }
-.admonition.tip .admonition-title,.admonition.hint .admonition-title,.admonition.important .admonition-title,.admonition.success .admonition-title,.admonition.check .admonition-title,.admonition.done .admonition-title { background: color-mix(in srgb, var(--green) 15%, transparent); }
-.admonition.question .admonition-title,.admonition.help .admonition-title,.admonition.faq .admonition-title { background: color-mix(in srgb, var(--yellow) 15%, transparent); }
-.admonition.warning .admonition-title,.admonition.caution .admonition-title,.admonition.attention .admonition-title { background: color-mix(in srgb, var(--orange) 15%, transparent); }
-.admonition.failure .admonition-title,.admonition.fail .admonition-title,.admonition.missing .admonition-title { background: color-mix(in srgb, var(--pink) 15%, transparent); }
-.admonition.danger .admonition-title,.admonition.error .admonition-title,.admonition.bug .admonition-title { background: color-mix(in srgb, var(--red) 15%, transparent); }
-.admonition.quote, .admonition.cite { background: color-mix(in srgb, var(--grey) 20%, transparent); }
-.admonition.quote .admonition-title, .admonition.cite .admonition-title { background: color-mix(in srgb, var(--grey) 30%, transparent); }

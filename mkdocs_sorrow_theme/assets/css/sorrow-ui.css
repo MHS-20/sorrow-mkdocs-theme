@@ -1,0 +1,2710 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --spacing-auto: auto;
+    --spacing-xxs: 0.375rem;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --sizing-auto: auto;
+    --sizing-none: none;
+    --sizing-full: 100%;
+    --sizing-xxs: 16rem;
+    --sizing-xs: 20rem;
+    --sizing-sm: 24rem;
+    --sizing-md: 28rem;
+    --sizing-lg: 32rem;
+    --sizing-xl: 36rem;
+    --sizing-2xl: 40rem;
+    --sizing-3xl: 48rem;
+    --sizing-4xl: 56rem;
+    --sizing-5xl: 64rem;
+    --sizing-6xl: 72rem;
+    --sizing-7xl: 80rem;
+    --sizing-8xl: 90rem;
+    --glow-spacing-x: var(--spacing-md);
+    --glow-spacing-y: var(--spacing-lg);
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 0.75rem;
+    --spacing-4: 1rem;
+    --spacing-5: 1.25rem;
+    --spacing-6: 1.5rem;
+    --spacing-8: 2rem;
+    --spacing-10: 2.5rem;
+    --spacing-12: 3rem;
+    --spacing-16: 4rem;
+    --spacing-20: 5rem;
+    --spacing-24: 6rem;
+    --spacing-32: 8rem;
+    --spacing-40: 10rem;
+    --spacing-48: 12rem;
+    --spacing-56: 14rem;
+    --spacing-64: 16rem;
+}
+
+.sorrow-box {
+    box-sizing: border-box;
+}
+
+.sorrow-box h1,
+.sorrow-box h2,
+.sorrow-box h3,
+.sorrow-box h4 {
+    margin: 0;
+}
+
+.sorrow-p-none {
+    padding: var(--spacing-none);
+}
+
+.sorrow-px-none {
+    padding-left: var(--spacing-none);
+    padding-right: var(--spacing-none);
+}
+
+.sorrow-py-none {
+    padding-bottom: var(--spacing-none);
+    padding-top: var(--spacing-none);
+}
+
+.sorrow-pl-none {
+    padding-left: var(--spacing-none);
+}
+
+.sorrow-pr-none {
+    padding-right: var(--spacing-none);
+}
+
+.sorrow-pt-none {
+    padding-top: var(--spacing-none);
+}
+
+.sorrow-pb-none {
+    padding-bottom: var(--spacing-none);
+}
+
+.sorrow-p-xxs {
+    padding: var(--spacing-xxs);
+}
+
+.sorrow-px-xxs {
+    padding-left: var(--spacing-xxs);
+    padding-right: var(--spacing-xxs);
+}
+
+.sorrow-py-xxs {
+    padding-bottom: var(--spacing-xxs);
+    padding-top: var(--spacing-xxs);
+}
+
+.sorrow-pl-xxs {
+    padding-left: var(--spacing-xxs);
+}
+
+.sorrow-pr-xxs {
+    padding-right: var(--spacing-xxs);
+}
+
+.sorrow-pt-xxs {
+    padding-top: var(--spacing-xxs);
+}
+
+.sorrow-pb-xxs {
+    padding-bottom: var(--spacing-xxs);
+}
+
+.sorrow-p-xs {
+    padding: var(--spacing-xs);
+}
+
+.sorrow-px-xs {
+    padding-left: var(--spacing-xs);
+    padding-right: var(--spacing-xs);
+}
+
+.sorrow-py-xs {
+    padding-bottom: var(--spacing-xs);
+    padding-top: var(--spacing-xs);
+}
+
+.sorrow-pl-xs {
+    padding-left: var(--spacing-xs);
+}
+
+.sorrow-pr-xs {
+    padding-right: var(--spacing-xs);
+}
+
+.sorrow-pt-xs {
+    padding-top: var(--spacing-xs);
+}
+
+.sorrow-pb-xs {
+    padding-bottom: var(--spacing-xs);
+}
+
+.sorrow-p-sm {
+    padding: var(--spacing-sm);
+}
+
+.sorrow-px-sm {
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
+}
+
+.sorrow-py-sm {
+    padding-bottom: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+}
+
+.sorrow-pl-sm {
+    padding-left: var(--spacing-sm);
+}
+
+.sorrow-pr-sm {
+    padding-right: var(--spacing-sm);
+}
+
+.sorrow-pt-sm {
+    padding-top: var(--spacing-sm);
+}
+
+.sorrow-pb-sm {
+    padding-bottom: var(--spacing-sm);
+}
+
+.sorrow-p-md {
+    padding: var(--spacing-md);
+}
+
+.sorrow-px-md {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+}
+
+.sorrow-py-md {
+    padding-bottom: var(--spacing-md);
+    padding-top: var(--spacing-md);
+}
+
+.sorrow-pl-md {
+    padding-left: var(--spacing-md);
+}
+
+.sorrow-pr-md {
+    padding-right: var(--spacing-md);
+}
+
+.sorrow-pt-md {
+    padding-top: var(--spacing-md);
+}
+
+.sorrow-pb-md {
+    padding-bottom: var(--spacing-md);
+}
+
+.sorrow-p-lg {
+    padding: var(--spacing-lg);
+}
+
+.sorrow-px-lg {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
+}
+
+.sorrow-py-lg {
+    padding-bottom: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+}
+
+.sorrow-pl-lg {
+    padding-left: var(--spacing-lg);
+}
+
+.sorrow-pr-lg {
+    padding-right: var(--spacing-lg);
+}
+
+.sorrow-pt-lg {
+    padding-top: var(--spacing-lg);
+}
+
+.sorrow-pb-lg {
+    padding-bottom: var(--spacing-lg);
+}
+
+.sorrow-m-auto {
+    margin: var(--spacing-auto);
+}
+
+.sorrow-mx-auto {
+    margin-left: var(--spacing-auto);
+    margin-right: var(--spacing-auto);
+}
+
+.sorrow-my-auto {
+    margin-bottom: var(--spacing-auto);
+    margin-top: var(--spacing-auto);
+}
+
+.sorrow-ml-auto {
+    margin-left: var(--spacing-auto);
+}
+
+.sorrow-mr-auto {
+    margin-right: var(--spacing-auto);
+}
+
+.sorrow-mt-auto {
+    margin-top: var(--spacing-auto);
+}
+
+.sorrow-mb-auto {
+    margin-bottom: var(--spacing-auto);
+}
+
+.sorrow-m-none {
+    margin: var(--spacing-none);
+}
+
+.sorrow-mx-none {
+    margin-left: var(--spacing-none);
+    margin-right: var(--spacing-none);
+}
+
+.sorrow-my-none {
+    margin-bottom: var(--spacing-none);
+    margin-top: var(--spacing-none);
+}
+
+.sorrow-ml-none {
+    margin-left: var(--spacing-none);
+}
+
+.sorrow-mr-none {
+    margin-right: var(--spacing-none);
+}
+
+.sorrow-mt-none {
+    margin-top: var(--spacing-none);
+}
+
+.sorrow-mb-none {
+    margin-bottom: var(--spacing-none);
+}
+
+.sorrow-m-xxs {
+    margin: var(--spacing-xxs);
+}
+
+.sorrow-mx-xxs {
+    margin-left: var(--spacing-xxs);
+    margin-right: var(--spacing-xxs);
+}
+
+.sorrow-my-xxs {
+    margin-bottom: var(--spacing-xxs);
+    margin-top: var(--spacing-xxs);
+}
+
+.sorrow-ml-xxs {
+    margin-left: var(--spacing-xxs);
+}
+
+.sorrow-mr-xxs {
+    margin-right: var(--spacing-xxs);
+}
+
+.sorrow-mt-xxs {
+    margin-top: var(--spacing-xxs);
+}
+
+.sorrow-mb-xxs {
+    margin-bottom: var(--spacing-xxs);
+}
+
+.sorrow-m-xs {
+    margin: var(--spacing-xs);
+}
+
+.sorrow-mx-xs {
+    margin-left: var(--spacing-xs);
+    margin-right: var(--spacing-xs);
+}
+
+.sorrow-my-xs {
+    margin-bottom: var(--spacing-xs);
+    margin-top: var(--spacing-xs);
+}
+
+.sorrow-ml-xs {
+    margin-left: var(--spacing-xs);
+}
+
+.sorrow-mr-xs {
+    margin-right: var(--spacing-xs);
+}
+
+.sorrow-mt-xs {
+    margin-top: var(--spacing-xs);
+}
+
+.sorrow-mb-xs {
+    margin-bottom: var(--spacing-xs);
+}
+
+.sorrow-m-sm {
+    margin: var(--spacing-sm);
+}
+
+.sorrow-mx-sm {
+    margin-left: var(--spacing-sm);
+    margin-right: var(--spacing-sm);
+}
+
+.sorrow-my-sm {
+    margin-bottom: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.sorrow-ml-sm {
+    margin-left: var(--spacing-sm);
+}
+
+.sorrow-mr-sm {
+    margin-right: var(--spacing-sm);
+}
+
+.sorrow-mt-sm {
+    margin-top: var(--spacing-sm);
+}
+
+.sorrow-mb-sm {
+    margin-bottom: var(--spacing-sm);
+}
+
+.sorrow-m-md {
+    margin: var(--spacing-md);
+}
+
+.sorrow-mx-md {
+    margin-left: var(--spacing-md);
+    margin-right: var(--spacing-md);
+}
+
+.sorrow-my-md {
+    margin-bottom: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.sorrow-ml-md {
+    margin-left: var(--spacing-md);
+}
+
+.sorrow-mr-md {
+    margin-right: var(--spacing-md);
+}
+
+.sorrow-mt-md {
+    margin-top: var(--spacing-md);
+}
+
+.sorrow-mb-md {
+    margin-bottom: var(--spacing-md);
+}
+
+.sorrow-m-lg {
+    margin: var(--spacing-lg);
+}
+
+.sorrow-mx-lg {
+    margin-left: var(--spacing-lg);
+    margin-right: var(--spacing-lg);
+}
+
+.sorrow-my-lg {
+    margin-bottom: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.sorrow-ml-lg {
+    margin-left: var(--spacing-lg);
+}
+
+.sorrow-mr-lg {
+    margin-right: var(--spacing-lg);
+}
+
+.sorrow-mt-lg {
+    margin-top: var(--spacing-lg);
+}
+
+.sorrow-mb-lg {
+    margin-bottom: var(--spacing-lg);
+}
+
+.sorrow-h-auto {
+    height: var(--sizing-auto);
+}
+
+.sorrow-w-auto {
+    width: var(--sizing-auto);
+}
+
+.sorrow-h-none {
+    height: var(--sizing-none);
+}
+
+.sorrow-w-none {
+    width: var(--sizing-none);
+}
+
+.sorrow-h-full {
+    height: var(--sizing-full);
+}
+
+.sorrow-w-full {
+    width: var(--sizing-full);
+}
+
+.sorrow-h-xxs {
+    height: var(--sizing-xxs);
+}
+
+.sorrow-w-xxs {
+    width: var(--sizing-xxs);
+}
+
+.sorrow-h-xs {
+    height: var(--sizing-xs);
+}
+
+.sorrow-w-xs {
+    width: var(--sizing-xs);
+}
+
+.sorrow-h-sm {
+    height: var(--sizing-sm);
+}
+
+.sorrow-w-sm {
+    width: var(--sizing-sm);
+}
+
+.sorrow-h-md {
+    height: var(--sizing-md);
+}
+
+.sorrow-w-md {
+    width: var(--sizing-md);
+}
+
+.sorrow-h-lg {
+    height: var(--sizing-lg);
+}
+
+.sorrow-w-lg {
+    width: var(--sizing-lg);
+}
+
+.sorrow-h-xl {
+    height: var(--sizing-xl);
+}
+
+.sorrow-w-xl {
+    width: var(--sizing-xl);
+}
+
+.sorrow-h-2xl {
+    height: var(--sizing-2xl);
+}
+
+.sorrow-w-2xl {
+    width: var(--sizing-2xl);
+}
+
+.sorrow-h-3xl {
+    height: var(--sizing-3xl);
+}
+
+.sorrow-w-3xl {
+    width: var(--sizing-3xl);
+}
+
+.sorrow-h-4xl {
+    height: var(--sizing-4xl);
+}
+
+.sorrow-w-4xl {
+    width: var(--sizing-4xl);
+}
+
+.sorrow-h-5xl {
+    height: var(--sizing-5xl);
+}
+
+.sorrow-w-5xl {
+    width: var(--sizing-5xl);
+}
+
+.sorrow-h-6xl {
+    height: var(--sizing-6xl);
+}
+
+.sorrow-w-6xl {
+    width: var(--sizing-6xl);
+}
+
+.sorrow-h-7xl {
+    height: var(--sizing-7xl);
+}
+
+.sorrow-w-7xl {
+    width: var(--sizing-7xl);
+}
+
+.sorrow-h-8xl {
+    height: var(--sizing-8xl);
+}
+
+.sorrow-w-8xl {
+    width: var(--sizing-8xl);
+}
+
+
+.sorrow-bg-animated {
+    animation: animatedGradient 6s ease infinite alternate;
+    background-image: linear-gradient(var(--gradientDegree), var(--orange), var(--yellow), var(--red), var(--pink), var(--purple), var(--cyan), var(--green));
+    background-size: 300% 300%;
+    content: "";
+}
+
+@keyframes animatedGradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    to {
+        background-position: 0 50%;
+    }
+}
+
+:root {
+    --border-size: 0.1rem;
+    --rounded-none: 0;
+    --rounded-sm: 0.125rem;
+    --rounded: 0.25rem;
+    --rounded-md: 0.375rem;
+    --rounded-lg: 0.5rem;
+    --rounded-xl: 0.75rem;
+    --rounded-2xl: 1rem;
+    --rounded-3xl: 1.5rem;
+    --rounded-full: 9999px;
+}
+
+.sorrow-rounded-none {
+    border-radius: var(--rounded-none);
+}
+
+.sorrow-rounded-sm {
+    border-radius: var(--rounded-sm);
+}
+
+.sorrow-rounded {
+    border-radius: var(--rounded);
+}
+
+.sorrow-rounded-md {
+    border-radius: var(--rounded-md);
+}
+
+.sorrow-rounded-lg {
+    border-radius: var(--rounded-lg);
+}
+
+.sorrow-rounded-xl {
+    border-radius: var(--rounded-xl);
+}
+
+.sorrow-rounded-2xl {
+    border-radius: var(--rounded-2xl);
+}
+
+.sorrow-rounded-3xl {
+    border-radius: var(--rounded-3xl);
+}
+
+.sorrow-rounded-full {
+    border-radius: var(--rounded-full);
+}
+
+:root {
+    --display-none: none;
+    --display-block: block;
+    --display-flex: flex;
+    --display-grid: grid;
+    --display-table: table;
+    --display-inline: inline;
+    --display-inline-block: inline-block;
+    --display-inline-flex: inline-flex;
+    --display-inline-grid: inline-grid;
+    --display-inline-table: inline-table;
+}
+
+.sorrow-d-none {
+    display: var(--display-none);
+}
+
+.sorrow-d-block {
+    display: var(--display-block);
+}
+
+.sorrow-d-flex {
+    display: var(--display-flex);
+}
+
+.sorrow-d-grid {
+    display: var(--display-grid);
+}
+
+.sorrow-d-table {
+    display: var(--display-table);
+}
+
+.sorrow-d-inline {
+    display: var(--display-inline);
+}
+
+.sorrow-d-inline-block {
+    display: var(--display-inline-block);
+}
+
+.sorrow-d-inline-flex {
+    display: var(--display-inline-flex);
+}
+
+.sorrow-d-inline-grid {
+    display: var(--display-inline-grid);
+}
+
+.sorrow-d-inline-table {
+    display: var(--display-inline-table);
+}
+
+:root {
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-md: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 1.25rem;
+    --font-2xl: 1.5rem;
+    --font-3xl: 1.875rem;
+    --font-4xl: 2.25rem;
+    --font-5xl: 3rem;
+    --font-6xl: 4rem;
+    --line-height-xs: 1;
+    --line-height-sm: 1.25;
+    --line-height-md: 1.375;
+    --line-height-lg: 1.5;
+    --line-height-xl: 1.625;
+    --line-height-2xl: 2;
+}
+
+.sorrow-btn,
+.sorrow-heading,
+.sorrow-input,
+.sorrow-select,
+.sorrow-text {
+    font-family: Fira Code, monospace;
+}
+
+.sorrow-heading {
+    margin: 0;
+}
+
+code {
+    background: var(--purple-100);
+    border-radius: var(--rounded-sm);
+    color: var(--purple-900);
+    font-family: Fira Code, monospace;
+    padding: 0.1rem 0.3rem;
+}
+
+.sorrow-heading {
+    font-size: var(--font-lg);
+}
+
+.sorrow-heading-2xl {
+    font-size: var(--font-5xl);
+}
+
+.sorrow-heading-xl {
+    font-size: var(--font-2xl);
+}
+
+.sorrow-heading-lg {
+    font-size: var(--font-xl);
+}
+
+.sorrow-heading-sm {
+    font-size: var(--font-md);
+}
+
+.sorrow-heading-xs {
+    font-size: var(--font-sm);
+}
+
+.sorrow-text-bold {
+    font-weight: 700;
+}
+
+.sorrow-text-semibold {
+    font-weight: 600;
+}
+
+.sorrow-text {
+    font-size: var(--font-md);
+}
+
+.sorrow-text.sorrow-text-lg {
+    font-size: var(--font-lg);
+}
+
+.sorrow-text.sorrow-text-sm {
+    font-size: var(--font-sm);
+}
+
+.sorrow-text.sorrow-text-xs {
+    font-size: var(--font-xs);
+}
+
+.sorrow-line-height {
+    line-height: var(--line-height-md);
+}
+
+.sorrow-line-height-2xl {
+    line-height: var(--line-height-2xl);
+}
+
+.sorrow-line-height-xl {
+    line-height: var(--line-height-xl);
+}
+
+.sorrow-line-height-lg {
+    line-height: var(--line-height-lg);
+}
+
+.sorrow-line-height-sm {
+    line-height: var(--line-height-sm);
+}
+
+.sorrow-line-height-xs {
+    line-height: var(--line-height-xs);
+}
+
+.sorrow-text-left {
+    text-align: left;
+}
+
+.sorrow-text-center {
+    text-align: center;
+}
+
+.sorrow-text-right {
+    text-align: right;
+}
+
+.sorrow-text-justify {
+    text-align: justify;
+}
+
+.sorrow-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: var(--rounded-lg);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.16s ease-in-out;
+}
+
+.sorrow-btn:active,
+.sorrow-btn:focus {
+    box-shadow: inset -4px -4px 1px hsla(0, 0%, 100%, 0.3);
+    opacity: 0.75;
+    outline: 0;
+}
+
+.sorrow-btn:disabled {
+    background-color: var(--disabled);
+    color: var(--black);
+    cursor: not-allowed;
+}
+
+.sorrow-btn:not(:disabled):hover {
+    box-shadow: 4px 4px hsla(0, 0%, 100%, 0.1);
+    opacity: 0.75;
+}
+
+.sorrow-btn:not(:disabled):disabled:hover {
+    box-shadow: none;
+}
+
+.sorrow-btn-outline {
+    background-color: transparent;
+    border-style: solid;
+    border-width: var(--border-size);
+}
+
+.sorrow-btn-outline:disabled {
+    background-color: transparent;
+    border-color: var(--disabled);
+    color: var(--disabled);
+}
+
+.sorrow-btn-outline:disabled .sorrow-text {
+    color: var(--disabled);
+}
+
+.sorrow-btn-ghost:active,
+.sorrow-btn-ghost:focus,
+.sorrow-btn-ghost:not(:disabled):hover {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    box-shadow: none;
+}
+
+.sorrow-btn-ghost:disabled {
+    background-color: var(--disabled);
+    color: var(--black);
+}
+
+.sorrow-btn-ghost:disabled .sorrow-text {
+    color: var(--black);
+}
+
+.sorrow-btn.sorrow-btn-xs {
+    font-size: var(--font-xs);
+    height: var(--spacing-6);
+    line-height: var(--spacing-6);
+    min-width: var(--spacing-6);
+    padding: 0 var(--spacing-2);
+}
+
+.sorrow-btn.sorrow-btn-sm {
+    font-size: var(--font-sm);
+    height: var(--spacing-8);
+    line-height: var(--spacing-8);
+    min-width: var(--spacing-8);
+    padding: 0 var(--spacing-3);
+}
+
+.sorrow-btn {
+    font-size: var(--font-md);
+    height: var(--spacing-10);
+    line-height: var(--spacing-10);
+    min-width: var(--spacing-10);
+    padding: 0 var(--spacing-4);
+}
+
+.sorrow-btn.sorrow-btn-lg {
+    font-size: var(--font-lg);
+    height: var(--spacing-12);
+    line-height: var(--spacing-12);
+    min-width: var(--spacing-12);
+    padding: 0 var(--spacing-6);
+}
+
+.sorrow-badge {
+    background-color: var(--accentColor);
+    border: none;
+    border-radius: var(--rounded-lg);
+    padding: 1rem 1.5rem;
+}
+
+.sorrow-badge,
+.sorrow-badge .sorrow-text {
+    text-transform: uppercase;
+}
+
+.sorrow-badge-outline,
+.sorrow-badge-subtle {
+    border-style: solid;
+    border-width: var(--border-size);
+}
+
+.sorrow-badge-outline {
+    background-color: transparent;
+}
+
+.sorrow-input {
+    -webkit-appearance: textfield;
+    background: var(--blackSecondary);
+    border: 0.3rem solid transparent;
+    border-radius: var(--rounded-lg);
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.sorrow-input:focus {
+    border-color: var(--white);
+}
+
+.sorrow-input::-moz-placeholder {
+    color: var(--blackTernary);
+}
+
+.sorrow-input::placeholder {
+    color: var(--blackTernary);
+}
+
+.sorrow-input-outline {
+    background: transparent;
+    border-color: var(--blackTernary);
+}
+
+.sorrow-input-outline.sorrow-input-black,
+.sorrow-input-outline.sorrow-input-black:focus,
+.sorrow-input.sorrow-input-black:focus {
+    border-color: var(--black);
+}
+
+.sorrow-input-outline.sorrow-input-blackSecondary,
+.sorrow-input-outline.sorrow-input-blackSecondary:focus,
+.sorrow-input.sorrow-input-blackSecondary:focus {
+    border-color: var(--blackSecondary);
+}
+
+.sorrow-input-outline.sorrow-input-white,
+.sorrow-input-outline.sorrow-input-white:focus,
+.sorrow-input.sorrow-input-white:focus {
+    border-color: var(--white);
+}
+
+.sorrow-input-outline.sorrow-input-cyan,
+.sorrow-input-outline.sorrow-input-cyan:focus,
+.sorrow-input.sorrow-input-cyan:focus {
+    border-color: var(--cyan);
+}
+
+.sorrow-input-outline.sorrow-input-green,
+.sorrow-input-outline.sorrow-input-green:focus,
+.sorrow-input.sorrow-input-green:focus {
+    border-color: var(--green);
+}
+
+.sorrow-input-outline.sorrow-input-orange,
+.sorrow-input-outline.sorrow-input-orange:focus,
+.sorrow-input.sorrow-input-orange:focus {
+    border-color: var(--orange);
+}
+
+.sorrow-input-outline.sorrow-input-pink,
+.sorrow-input-outline.sorrow-input-pink:focus,
+.sorrow-input.sorrow-input-pink:focus {
+    border-color: var(--pink);
+}
+
+.sorrow-input-outline.sorrow-input-purple,
+.sorrow-input-outline.sorrow-input-purple:focus,
+.sorrow-input.sorrow-input-purple:focus {
+    border-color: var(--purple);
+}
+
+.sorrow-input-outline.sorrow-input-red,
+.sorrow-input-outline.sorrow-input-red:focus,
+.sorrow-input.sorrow-input-red:focus {
+    border-color: var(--red);
+}
+
+.sorrow-input-outline.sorrow-input-yellow,
+.sorrow-input-outline.sorrow-input-yellow:focus,
+.sorrow-input.sorrow-input-yellow:focus {
+    border-color: var(--yellow);
+}
+
+.sorrow-input.sorrow-input-sm {
+    font-size: var(--font-sm);
+    height: var(--spacing-8);
+    padding: 0 var(--spacing-3);
+}
+
+.sorrow-input {
+    font-size: var(--font-md);
+    height: var(--spacing-10);
+    padding: 0 var(--spacing-4);
+}
+
+.sorrow-input.sorrow-input-lg {
+    font-size: var(--font-lg);
+    height: var(--spacing-12);
+    padding: 0 var(--spacing-6);
+}
+
+.sorrow-input.sorrow-input-border-sm {
+    border-width: 0.1rem;
+}
+
+.sorrow-input.sorrow-input-border-md {
+    border-width: 0.2rem;
+}
+
+.sorrow-input.sorrow-input-border-lg {
+    border-width: 0.3rem;
+}
+
+.sorrow-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: var(--blackSecondary);
+    border: 0.3rem solid transparent;
+    border-radius: var(--rounded-lg);
+    box-sizing: border-box;
+    color: var(--white);
+    outline: none;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.sorrow-select:before {
+    background-color: #fff;
+    border-style: solid;
+    border-width: 0.25rem 0.25rem 0 0;
+    content: "";
+    display: inline-block;
+    height: 0.45rem;
+    left: 0.15rem;
+    left: 0;
+    position: relative;
+    top: 0.15rem;
+    transform: rotate(-45deg);
+    transform: rotate(45deg);
+    vertical-align: top;
+    width: 0.45rem;
+}
+
+.sorrow-select:focus {
+    border-color: var(--white);
+}
+
+.sorrow-select::-moz-placeholder {
+    color: var(--blackTernary);
+}
+
+.sorrow-select::placeholder {
+    color: var(--blackTernary);
+}
+
+.sorrow-select:disabled {
+    background: var(--blackTernary);
+    color: var(--black);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.sorrow-select-outline:disabled {
+    color: var(--white);
+}
+
+.sorrow-select-outline,
+.sorrow-select-outline:disabled {
+    background: transparent;
+    border-color: var(--blackTernary);
+}
+
+.sorrow-select-arrow {
+    align-items: center;
+    display: inline-flex;
+    height: 100%;
+    justify-content: center;
+    pointer-events: none;
+    position: absolute;
+    right: var(--spacing-2);
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--spacing-8);
+    z-index: 2;
+}
+
+.sorrow-select-arrow svg {
+    fill: currentColor;
+    height: 3.6rem;
+    width: 3.6rem;
+}
+
+.sorrow-select:disabled+.sorrow-select-arrow {
+    color: var(--black);
+}
+
+.sorrow-select-outline:disabled+.sorrow-select-arrow {
+    color: var(--white);
+    opacity: 0.5;
+}
+
+.sorrow-select-outline.sorrow-select-black,
+.sorrow-select-outline.sorrow-select-black:focus,
+.sorrow-select.sorrow-select-black:focus {
+    border-color: var(--black);
+}
+
+.sorrow-select-outline.sorrow-select-white,
+.sorrow-select-outline.sorrow-select-white:focus,
+.sorrow-select.sorrow-select-white:focus {
+    border-color: var(--white);
+}
+
+.sorrow-select-outline.sorrow-select-cyan,
+.sorrow-select-outline.sorrow-select-cyan:focus,
+.sorrow-select.sorrow-select-cyan:focus {
+    border-color: var(--cyan);
+}
+
+.sorrow-select-outline.sorrow-select-green,
+.sorrow-select-outline.sorrow-select-green:focus,
+.sorrow-select.sorrow-select-green:focus {
+    border-color: var(--green);
+}
+
+.sorrow-select-outline.sorrow-select-orange,
+.sorrow-select-outline.sorrow-select-orange:focus,
+.sorrow-select.sorrow-select-orange:focus {
+    border-color: var(--orange);
+}
+
+.sorrow-select-outline.sorrow-select-pink,
+.sorrow-select-outline.sorrow-select-pink:focus,
+.sorrow-select.sorrow-select-pink:focus {
+    border-color: var(--pink);
+}
+
+.sorrow-select-outline.sorrow-select-purple,
+.sorrow-select-outline.sorrow-select-purple:focus,
+.sorrow-select.sorrow-select-purple:focus {
+    border-color: var(--purple);
+}
+
+.sorrow-select-outline.sorrow-select-red,
+.sorrow-select-outline.sorrow-select-red:focus,
+.sorrow-select.sorrow-select-red:focus {
+    border-color: var(--red);
+}
+
+.sorrow-select-outline.sorrow-select-yellow,
+.sorrow-select-outline.sorrow-select-yellow:focus,
+.sorrow-select.sorrow-select-yellow:focus {
+    border-color: var(--yellow);
+}
+
+.sorrow-select.sorrow-select-sm {
+    font-size: var(--font-sm);
+    height: var(--spacing-8);
+}
+
+.sorrow-select {
+    font-size: var(--font-md);
+    height: var(--spacing-10);
+    padding-left: var(--spacing-4);
+    padding-right: var(--spacing-8);
+}
+
+.sorrow-select.sorrow-select-lg {
+    font-size: var(--font-lg);
+    height: var(--spacing-12);
+}
+
+.sorrow-anchor {
+    text-decoration: none;
+    transition: all 0.16s ease-in-out;
+}
+
+.sorrow-text-black\--hover:hover {
+    color: var(--black);
+}
+
+.sorrow-text-black-secondary--hover:hover {
+    color: var(--blackSecondary);
+}
+
+.sorrow-text-white\--hover:hover {
+    color: var(--white);
+}
+
+.sorrow-text-white-secondary--hover:hover {
+    color: var(--whiteSecondary);
+}
+
+.sorrow-text-cyan\--hover:hover {
+    color: var(--cyan);
+}
+
+.sorrow-text-cyan-secondary--hover:hover {
+    color: var(--cyanSecondary);
+}
+
+.sorrow-text-green\--hover:hover {
+    color: var(--green);
+}
+
+.sorrow-text-green-secondary--hover:hover {
+    color: var(--greenSecondary);
+}
+
+.sorrow-text-orange\--hover:hover {
+    color: var(--orange);
+}
+
+.sorrow-text-orange-secondary--hover:hover {
+    color: var(--orangeSecondary);
+}
+
+.sorrow-text-pink\--hover:hover {
+    color: var(--pink);
+}
+
+.sorrow-text-pink-secondary--hover:hover {
+    color: var(--pinkSecondary);
+}
+
+.sorrow-text-purple\--hover:hover {
+    color: var(--purple);
+}
+
+.sorrow-text-purple-secondary--hover:hover {
+    color: var(--purpleSecondary);
+}
+
+.sorrow-text-red\--hover:hover {
+    color: var(--red);
+}
+
+.sorrow-text-red-secondary--hover:hover {
+    color: var(--redSecondary);
+}
+
+.sorrow-text-yellow\--hover:hover {
+    color: var(--yellow);
+}
+
+.sorrow-text-yellow-secondary--hover:hover {
+    color: var(--yellowSecondary);
+}
+
+.sorrow-text-purple-cyan\--hover:hover {
+    background-image: linear-gradient(var(--gradientDegree), var(--purple) 0, var(--cyan) 100%);
+}
+
+.sorrow-text-purple-cyan\--hover:hover,
+.sorrow-text-yellow-pink\--hover:hover {
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-size: 100%;
+}
+
+.sorrow-text-yellow-pink\--hover:hover {
+    background-image: linear-gradient(var(--gradientDegree), var(--yellow) 0, var(--pink) 100%);
+}
+
+.sorrow-text-cyan-green\--hover:hover {
+    background-image: linear-gradient(var(--gradientDegree), var(--cyan) 0, var(--green) 100%);
+}
+
+.sorrow-text-cyan-green\--hover:hover,
+.sorrow-text-pink-purple\--hover:hover {
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-size: 100%;
+}
+
+.sorrow-text-pink-purple\--hover:hover {
+    background-image: linear-gradient(var(--gradientDegree), var(--pink) 0, var(--purple) 100%);
+}
+
+:root {
+    --subtle-avatar-shadow: inset 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.sorrow-avatar {
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    height: 4.4rem;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 4.5rem;
+}
+
+.sorrow-avatar,
+.sorrow-avatar-background {
+    border-radius: var(--rounded-full);
+    box-sizing: border-box;
+}
+
+.sorrow-avatar-background {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: "inline-block";
+    height: 100%;
+    width: 100%;
+}
+
+.sorrow-avatar-lg-stroke {
+    border-width: 3px;
+}
+
+.sorrow-avatar-no-border {
+    border-width: 0;
+    box-shadow: var(--subtle-avatar-shadow);
+}
+
+.sorrow-avatar-subtle {
+    box-shadow: var(--subtle-avatar-shadow);
+    filter: grayscale(100%);
+}
+
+.sorrow-avatar .sorrow-text {
+    text-transform: uppercase;
+    transform: translateY(1px);
+}
+
+.sorrow-checkbox,
+.sorrow-radio {
+    --active-inner: var(--white);
+    --background: var(--white);
+    --disabled: var(--blackSecondary);
+    --disabled-inner: var(--blackTernary);
+    --local-bg-color: var(--border-hover);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid var(--local-bg-color, var(--border));
+    cursor: pointer;
+    display: inline-block;
+    height: 21px;
+    margin: 0;
+    outline: none;
+    position: relative;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    vertical-align: top;
+}
+
+.sorrow-checkbox:after,
+.sorrow-radio:after {
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: transform var(--local-transform-speed, 0.3s) var(--local-transform-effect, ease), opacity var(--local-opacity-speed, 0.2s);
+}
+
+.sorrow-checkbox:checked {
+    background: var(--local-bg, var(--background));
+}
+
+.sorrow-checkbox:checked,
+.sorrow-radio:checked {
+    --local-bg: var(--active);
+    --local-bg-color: var(--active);
+    --local-opacity-speed: 0.3s;
+    --local-transform-speed: 0.6s;
+    --local-transform-effect: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.sorrow-checkbox:disabled,
+.sorrow-radio:disabled {
+    --local-bg: var(--disabled);
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+.sorrow-checkbox:disabled:checked,
+.sorrow-radio:disabled:checked {
+    --local-bg: var(--disabled-inner);
+    --local-bg-color: var(--border);
+}
+
+.sorrow-checkbox:disabled+label,
+.sorrow-radio:disabled+label {
+    cursor: not-allowed;
+}
+
+.sorrow-checkbox:focus,
+.sorrow-radio:focus {
+    box-shadow: 0 0 0 var(--focus);
+}
+
+.sorrow-checkbox:not(.sorrow-switch),
+.sorrow-radio:not(.sorrow-switch) {
+    width: 21px;
+}
+
+.sorrow-checkbox:not(.sorrow-switch):after,
+.sorrow-radio:not(.sorrow-switch):after {
+    opacity: var(--local-opacity, 0);
+}
+
+.sorrow-checkbox:not(.sorrow-switch):checked,
+.sorrow-radio:not(.sorrow-switch):checked {
+    --local-opacity: 1;
+}
+
+.sorrow-checkbox+label,
+.sorrow-radio+label {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 4px;
+    vertical-align: top;
+}
+
+.sorrow-checkbox:not(.sorrow-switch) {
+    border-radius: 7px;
+}
+
+.sorrow-checkbox:not(.sorrow-switch):after {
+    border: 2px solid var(--black);
+    border-left: 0;
+    border-top: 0;
+    height: 9px;
+    left: 6px;
+    top: 2px;
+    transform: rotate(var(--local-rotation, 20deg));
+    width: 5px;
+}
+
+.sorrow-checkbox:not(.sorrow-switch):checked {
+    --local-rotation: 43deg;
+}
+
+.sorrow-checkbox.sorrow-switch {
+    border-radius: 11px;
+    width: 38px;
+}
+
+.sorrow-checkbox.sorrow-switch:after {
+    background: var(--ab, var(--active-inner));
+    border-radius: 50%;
+    height: 15px;
+    left: 2px;
+    top: 2px;
+    transform: translateX(var(--x, 0));
+    width: 15px;
+}
+
+.sorrow-checkbox.sorrow-switch:checked {
+    --ab: var(--active);
+    --x: 17px;
+    background: none;
+}
+
+.sorrow-checkbox.sorrow-switch:disabled:not(:checked):after {
+    opacity: 0.6;
+}
+
+.sorrow-radio {
+    border-radius: 50%;
+}
+
+.sorrow-radio:after {
+    background: var(--local-bg-color);
+    border-radius: 50%;
+    height: 19px;
+    opacity: 0;
+    transform: scale(var(--scale));
+    width: 19px;
+}
+
+.sorrow-radio:disabled:checked:after {
+    background: var(--disabled-inner);
+}
+
+.sorrow-radio:checked {
+    --scale: 0.8;
+}
+
+.sorrow-checkbox-black,
+.sorrow-radio-black,
+.sorrow-switch-black {
+    --active: var(--black);
+    --focus: var(--blackSecondary);
+    --border: var(--blackSecondary);
+    --border-hover: var(--black);
+}
+
+.sorrow-checkbox-white,
+.sorrow-radio-white,
+.sorrow-switch-white {
+    --active: var(--white);
+    --focus: var(--whiteSecondary);
+    --border: var(--whiteSecondary);
+    --border-hover: var(--white);
+}
+
+.sorrow-checkbox-cyan,
+.sorrow-radio-cyan,
+.sorrow-switch-cyan {
+    --active: var(--cyan);
+    --focus: var(--cyanSecondary);
+    --border: var(--cyanSecondary);
+    --border-hover: var(--cyan);
+}
+
+.sorrow-checkbox-green,
+.sorrow-radio-green,
+.sorrow-switch-green {
+    --active: var(--green);
+    --focus: var(--greenSecondary);
+    --border: var(--greenSecondary);
+    --border-hover: var(--green);
+}
+
+.sorrow-checkbox-orange,
+.sorrow-radio-orange,
+.sorrow-switch-orange {
+    --active: var(--orange);
+    --focus: var(--orangeSecondary);
+    --border: var(--orangeSecondary);
+    --border-hover: var(--orange);
+}
+
+.sorrow-checkbox-pink,
+.sorrow-radio-pink,
+.sorrow-switch-pink {
+    --active: var(--pink);
+    --focus: var(--pinkSecondary);
+    --border: var(--pinkSecondary);
+    --border-hover: var(--pink);
+}
+
+.sorrow-checkbox-purple,
+.sorrow-radio-purple,
+.sorrow-switch-purple {
+    --active: var(--purple);
+    --focus: var(--purpleSecondary);
+    --border: var(--purpleSecondary);
+    --border-hover: var(--purple);
+}
+
+.sorrow-checkbox-red,
+.sorrow-radio-red,
+.sorrow-switch-red {
+    --active: var(--red);
+    --focus: var(--redSecondary);
+    --border: var(--redSecondary);
+    --border-hover: var(--red);
+}
+
+.sorrow-checkbox-yellow,
+.sorrow-radio-yellow,
+.sorrow-switch-yellow {
+    --active: var(--yellow);
+    --focus: var(--yellowSecondary);
+    --border: var(--yellowSecondary);
+    --border-hover: var(--yellow);
+}
+
+.sorrow-scrollbar-grey {
+    --sorrow-scrollbar-bg: transparent;
+    --sorrow-scrollbar-border: var(--greyLight);
+    --sorrow-scrollbar-thumb: var(--grey);
+    --sorrow-scrollbar-thumb-hover: var(--greySecondary);
+    overflow: auto;
+}
+
+.sorrow-scrollbar-grey::-webkit-scrollbar {
+    background-color: var(--sorrow-scrollbar-bg);
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.sorrow-scrollbar-grey::-webkit-scrollbar-track:horizontal {
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-grey::-webkit-scrollbar-track:vertical {
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-grey::-webkit-scrollbar-corner {
+    background-color: transparent;
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-grey::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    -moz-background-clip: content;
+    -webkit-background-clip: content;
+    background-color: var(--sorrow-scrollbar-thumb);
+    border: 0.4rem solid transparent;
+    border-radius: 1rem;
+    min-height: 3rem;
+    min-width: 3rem;
+}
+
+.sorrow-scrollbar-grey::-webkit-scrollbar-thumb:hover {
+    background-color: var(--sorrow-scrollbar-thumb-hover);
+}
+
+.sorrow-scrollbar-cyan {
+    --sorrow-scrollbar-bg: transparent;
+    --sorrow-scrollbar-border: var(--cyanLight);
+    --sorrow-scrollbar-thumb: var(--cyan);
+    --sorrow-scrollbar-thumb-hover: var(--cyanSecondary);
+    overflow: auto;
+}
+
+.sorrow-scrollbar-cyan::-webkit-scrollbar {
+    background-color: var(--sorrow-scrollbar-bg);
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.sorrow-scrollbar-cyan::-webkit-scrollbar-track:horizontal {
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-cyan::-webkit-scrollbar-track:vertical {
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-cyan::-webkit-scrollbar-corner {
+    background-color: transparent;
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-cyan::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    -moz-background-clip: content;
+    -webkit-background-clip: content;
+    background-color: var(--sorrow-scrollbar-thumb);
+    border: 0.4rem solid transparent;
+    border-radius: 1rem;
+    min-height: 3rem;
+    min-width: 3rem;
+}
+
+.sorrow-scrollbar-cyan::-webkit-scrollbar-thumb:hover {
+    background-color: var(--sorrow-scrollbar-thumb-hover);
+}
+
+.sorrow-scrollbar-green {
+    --sorrow-scrollbar-bg: transparent;
+    --sorrow-scrollbar-border: var(--greenLight);
+    --sorrow-scrollbar-thumb: var(--green);
+    --sorrow-scrollbar-thumb-hover: var(--greenSecondary);
+    overflow: auto;
+}
+
+.sorrow-scrollbar-green::-webkit-scrollbar {
+    background-color: var(--sorrow-scrollbar-bg);
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.sorrow-scrollbar-green::-webkit-scrollbar-track:horizontal {
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-green::-webkit-scrollbar-track:vertical {
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-green::-webkit-scrollbar-corner {
+    background-color: transparent;
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-green::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    -moz-background-clip: content;
+    -webkit-background-clip: content;
+    background-color: var(--sorrow-scrollbar-thumb);
+    border: 0.4rem solid transparent;
+    border-radius: 1rem;
+    min-height: 3rem;
+    min-width: 3rem;
+}
+
+.sorrow-scrollbar-green::-webkit-scrollbar-thumb:hover {
+    background-color: var(--sorrow-scrollbar-thumb-hover);
+}
+
+.sorrow-scrollbar-orange {
+    --sorrow-scrollbar-bg: transparent;
+    --sorrow-scrollbar-border: var(--orangeLight);
+    --sorrow-scrollbar-thumb: var(--orange);
+    --sorrow-scrollbar-thumb-hover: var(--orangeSecondary);
+    overflow: auto;
+}
+
+.sorrow-scrollbar-orange::-webkit-scrollbar {
+    background-color: var(--sorrow-scrollbar-bg);
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.sorrow-scrollbar-orange::-webkit-scrollbar-track:horizontal {
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-orange::-webkit-scrollbar-track:vertical {
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-orange::-webkit-scrollbar-corner {
+    background-color: transparent;
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-orange::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    -moz-background-clip: content;
+    -webkit-background-clip: content;
+    background-color: var(--sorrow-scrollbar-thumb);
+    border: 0.4rem solid transparent;
+    border-radius: 1rem;
+    min-height: 3rem;
+    min-width: 3rem;
+}
+
+.sorrow-scrollbar-orange::-webkit-scrollbar-thumb:hover {
+    background-color: var(--sorrow-scrollbar-thumb-hover);
+}
+
+.sorrow-scrollbar-pink {
+    --sorrow-scrollbar-bg: transparent;
+    --sorrow-scrollbar-border: var(--pinkLight);
+    --sorrow-scrollbar-thumb: var(--pink);
+    --sorrow-scrollbar-thumb-hover: var(--pinkSecondary);
+    overflow: auto;
+}
+
+.sorrow-scrollbar-pink::-webkit-scrollbar {
+    background-color: var(--sorrow-scrollbar-bg);
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.sorrow-scrollbar-pink::-webkit-scrollbar-track:horizontal {
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-pink::-webkit-scrollbar-track:vertical {
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-pink::-webkit-scrollbar-corner {
+    background-color: transparent;
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-pink::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    -moz-background-clip: content;
+    -webkit-background-clip: content;
+    background-color: var(--sorrow-scrollbar-thumb);
+    border: 0.4rem solid transparent;
+    border-radius: 1rem;
+    min-height: 3rem;
+    min-width: 3rem;
+}
+
+.sorrow-scrollbar-pink::-webkit-scrollbar-thumb:hover {
+    background-color: var(--sorrow-scrollbar-thumb-hover);
+}
+
+.sorrow-scrollbar-purple {
+    --sorrow-scrollbar-bg: transparent;
+    --sorrow-scrollbar-border: var(--purpleLight);
+    --sorrow-scrollbar-thumb: var(--purple);
+    --sorrow-scrollbar-thumb-hover: var(--purpleSecondary);
+    overflow: auto;
+}
+
+.sorrow-scrollbar-purple::-webkit-scrollbar {
+    background-color: var(--sorrow-scrollbar-bg);
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.sorrow-scrollbar-purple::-webkit-scrollbar-track:horizontal {
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-purple::-webkit-scrollbar-track:vertical {
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-purple::-webkit-scrollbar-corner {
+    background-color: transparent;
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-purple::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    -moz-background-clip: content;
+    -webkit-background-clip: content;
+    background-color: var(--sorrow-scrollbar-thumb);
+    border: 0.4rem solid transparent;
+    border-radius: 1rem;
+    min-height: 3rem;
+    min-width: 3rem;
+}
+
+.sorrow-scrollbar-purple::-webkit-scrollbar-thumb:hover {
+    background-color: var(--sorrow-scrollbar-thumb-hover);
+}
+
+.sorrow-scrollbar-red {
+    --sorrow-scrollbar-bg: transparent;
+    --sorrow-scrollbar-border: var(--redLight);
+    --sorrow-scrollbar-thumb: var(--red);
+    --sorrow-scrollbar-thumb-hover: var(--redSecondary);
+    overflow: auto;
+}
+
+.sorrow-scrollbar-red::-webkit-scrollbar {
+    background-color: var(--sorrow-scrollbar-bg);
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.sorrow-scrollbar-red::-webkit-scrollbar-track:horizontal {
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-red::-webkit-scrollbar-track:vertical {
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-red::-webkit-scrollbar-corner {
+    background-color: transparent;
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-red::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    -moz-background-clip: content;
+    -webkit-background-clip: content;
+    background-color: var(--sorrow-scrollbar-thumb);
+    border: 0.4rem solid transparent;
+    border-radius: 1rem;
+    min-height: 3rem;
+    min-width: 3rem;
+}
+
+.sorrow-scrollbar-red::-webkit-scrollbar-thumb:hover {
+    background-color: var(--sorrow-scrollbar-thumb-hover);
+}
+
+.sorrow-scrollbar-yellow {
+    --sorrow-scrollbar-bg: transparent;
+    --sorrow-scrollbar-border: var(--yellowLight);
+    --sorrow-scrollbar-thumb: var(--yellow);
+    --sorrow-scrollbar-thumb-hover: var(--yellowSecondary);
+    overflow: auto;
+}
+
+.sorrow-scrollbar-yellow::-webkit-scrollbar {
+    background-color: var(--sorrow-scrollbar-bg);
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.sorrow-scrollbar-yellow::-webkit-scrollbar-track:horizontal {
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-yellow::-webkit-scrollbar-track:vertical {
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-yellow::-webkit-scrollbar-corner {
+    background-color: transparent;
+    border-left: 0.0625rem solid var(--sorrow-scrollbar-border);
+    border-top: 0.0625rem solid var(--sorrow-scrollbar-border);
+}
+
+.sorrow-scrollbar-yellow::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    -moz-background-clip: content;
+    -webkit-background-clip: content;
+    background-color: var(--sorrow-scrollbar-thumb);
+    border: 0.4rem solid transparent;
+    border-radius: 1rem;
+    min-height: 3rem;
+    min-width: 3rem;
+}
+
+.sorrow-scrollbar-yellow::-webkit-scrollbar-thumb:hover {
+    background-color: var(--sorrow-scrollbar-thumb-hover);
+}
+
+.sorrow-card {
+    background-color: var(--accentColor);
+    border-radius: var(--rounded-lg);
+    box-shadow: -2px var(--glow-spacing-x) var(--glow-spacing-y) var(--glowColor);
+}
+
+.sorrow-card-subtle {
+    background: none;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: none;
+}
+
+.sorrow-tabs {
+    border-bottom: 1px solid var(--disabled);
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+}
+
+.sorrow-tab {
+    padding: var(--spacing-sm) 0;
+    position: relative;
+}
+
+.sorrow-tab,
+.sorrow-tab:after {
+    transition: all 0.2s ease-in-out;
+}
+
+.sorrow-tab:after {
+    background: transparent;
+    bottom: -1px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: scaleX(0.75);
+    width: 100%;
+}
+
+.sorrow-tab-link {
+    color: var(--disabled);
+    padding: var(--spacing-sm);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.sorrow-tab:hover .sorrow-tab-link {
+    color: var(--white);
+}
+
+.sorrow-tabs-black .sorrow-tab-active:after {
+    background: var(--black);
+    transform: scaleX(1);
+}
+
+.sorrow-tabs-black .sorrow-tab-active .sorrow-tab-link {
+    color: var(--black);
+}
+
+.sorrow-tabs-white .sorrow-tab-active:after {
+    background: var(--white);
+    transform: scaleX(1);
+}
+
+.sorrow-tabs-white .sorrow-tab-active .sorrow-tab-link {
+    color: var(--white);
+}
+
+.sorrow-tabs-cyan .sorrow-tab-active:after {
+    background: var(--cyan);
+    transform: scaleX(1);
+}
+
+.sorrow-tabs-cyan .sorrow-tab-active .sorrow-tab-link {
+    color: var(--cyan);
+}
+
+.sorrow-tabs-green .sorrow-tab-active:after {
+    background: var(--green);
+    transform: scaleX(1);
+}
+
+.sorrow-tabs-green .sorrow-tab-active .sorrow-tab-link {
+    color: var(--green);
+}
+
+.sorrow-tabs-orange .sorrow-tab-active:after {
+    background: var(--orange);
+    transform: scaleX(1);
+}
+
+.sorrow-tabs-orange .sorrow-tab-active .sorrow-tab-link {
+    color: var(--orange);
+}
+
+.sorrow-tabs-pink .sorrow-tab-active:after {
+    background: var(--pink);
+    transform: scaleX(1);
+}
+
+.sorrow-tabs-pink .sorrow-tab-active .sorrow-tab-link {
+    color: var(--pink);
+}
+
+.sorrow-tabs-purple .sorrow-tab-active:after {
+    background: var(--purple);
+    transform: scaleX(1);
+}
+
+.sorrow-tabs-purple .sorrow-tab-active .sorrow-tab-link {
+    color: var(--purple);
+}
+
+.sorrow-tabs-red .sorrow-tab-active:after {
+    background: var(--red);
+    transform: scaleX(1);
+}
+
+.sorrow-tabs-red .sorrow-tab-active .sorrow-tab-link {
+    color: var(--red);
+}
+
+.sorrow-tabs-yellow .sorrow-tab-active:after {
+    background: var(--yellow);
+    transform: scaleX(1);
+}
+
+.sorrow-tabs-yellow .sorrow-tab-active .sorrow-tab-link {
+    color: var(--yellow);
+}
+
+.sorrow-table {
+    border-collapse: collapse;
+    border-color: var(--accentColor);
+    width: 100%;
+}
+
+.sorrow-table th {
+    font-weight: 500;
+    padding-bottom: 0.2rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.sorrow-table td {
+    border-color: var(--disabled);
+    border-style: solid;
+    border-width: 0.1rem;
+    padding: 0.5rem;
+}
+
+.sorrow-table.sorrow-table-black td {
+    border-color: var(--black);
+}
+
+.sorrow-table-striped.sorrow-table-black tr:nth-child(2n) {
+    background-color: var(--blackLight);
+}
+
+.sorrow-table.sorrow-table-white td {
+    border-color: var(--white);
+}
+
+.sorrow-table-striped.sorrow-table-white tr:nth-child(2n) {
+    background-color: var(--whiteLight);
+}
+
+.sorrow-table.sorrow-table-cyan td {
+    border-color: var(--cyan);
+}
+
+.sorrow-table-striped.sorrow-table-cyan tr:nth-child(2n) {
+    background-color: var(--cyanLight);
+}
+
+.sorrow-table.sorrow-table-green td {
+    border-color: var(--green);
+}
+
+.sorrow-table-striped.sorrow-table-green tr:nth-child(2n) {
+    background-color: var(--greenLight);
+}
+
+.sorrow-table.sorrow-table-orange td {
+    border-color: var(--orange);
+}
+
+.sorrow-table-striped.sorrow-table-orange tr:nth-child(2n) {
+    background-color: var(--orangeLight);
+}
+
+.sorrow-table.sorrow-table-pink td {
+    border-color: var(--pink);
+}
+
+.sorrow-table-striped.sorrow-table-pink tr:nth-child(2n) {
+    background-color: var(--pinkLight);
+}
+
+.sorrow-table.sorrow-table-purple td {
+    border-color: var(--purple);
+}
+
+.sorrow-table-striped.sorrow-table-purple tr:nth-child(2n) {
+    background-color: var(--purpleLight);
+}
+
+.sorrow-table.sorrow-table-red td {
+    border-color: var(--red);
+}
+
+.sorrow-table-striped.sorrow-table-red tr:nth-child(2n) {
+    background-color: var(--redLight);
+}
+
+.sorrow-table.sorrow-table-yellow td {
+    border-color: var(--yellow);
+}
+
+.sorrow-table-striped.sorrow-table-yellow tr:nth-child(2n) {
+    background-color: var(--yellowLight);
+}
+
+.sorrow-table.sorrow-table-striped tr:nth-child(2n) {
+    background-color: var(--whiteLight);
+}
+
+.sorrow-list {
+    list-style: none;
+}
+
+.sorrow-list-unordered li:before {
+    content: "—";
+    padding-right: 10px;
+}
+
+.sorrow-list-ordered {
+    counter-reset: li;
+}
+
+.sorrow-list-ordered-lower-alpha {
+    --type: lower-alpha;
+}
+
+.sorrow-list-ordered-upper-alpha {
+    --type: upper-alpha;
+}
+
+.sorrow-list-ordered-lower-roman {
+    --type: lower-roman;
+}
+
+.sorrow-list-ordered-upper-roman {
+    --type: upper-roman;
+}
+
+.sorrow-list-ordered-decimal {
+    --type: decimal;
+}
+
+.sorrow-list-ordered li {
+    counter-increment: li;
+    margin-left: -30px;
+}
+
+.sorrow-list-ordered li:before {
+    color: var(--accentColor);
+    content: counter(li, var(--type, decimal)) ".";
+    display: inline-block;
+    margin-left: 15px;
+    padding-right: 5px;
+    text-align: right;
+    width: 30px;
+}
+
+.sorrow-list-black.sorrow-list-ordered li:before,
+.sorrow-list-black.sorrow-list-unordered li:before {
+    color: var(--black);
+}
+
+.sorrow-list-blackSecondary.sorrow-list-ordered li:before,
+.sorrow-list-blackSecondary.sorrow-list-unordered li:before {
+    color: var(--blackSecondary);
+}
+
+.sorrow-list-white.sorrow-list-ordered li:before,
+.sorrow-list-white.sorrow-list-unordered li:before {
+    color: var(--white);
+}
+
+.sorrow-list-cyan.sorrow-list-ordered li:before,
+.sorrow-list-cyan.sorrow-list-unordered li:before {
+    color: var(--cyan);
+}
+
+.sorrow-list-green.sorrow-list-ordered li:before,
+.sorrow-list-green.sorrow-list-unordered li:before {
+    color: var(--green);
+}
+
+.sorrow-list-orange.sorrow-list-ordered li:before,
+.sorrow-list-orange.sorrow-list-unordered li:before {
+    color: var(--orange);
+}
+
+.sorrow-list-pink.sorrow-list-ordered li:before,
+.sorrow-list-pink.sorrow-list-unordered li:before {
+    color: var(--pink);
+}
+
+.sorrow-list-purple.sorrow-list-ordered li:before,
+.sorrow-list-purple.sorrow-list-unordered li:before {
+    color: var(--purple);
+}
+
+.sorrow-list-red.sorrow-list-ordered li:before,
+.sorrow-list-red.sorrow-list-unordered li:before {
+    color: var(--red);
+}
+
+.sorrow-list-yellow.sorrow-list-ordered li:before,
+.sorrow-list-yellow.sorrow-list-unordered li:before {
+    color: var(--yellow);
+}
+
+.sorrow-list-none {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.sorrow-bg-purple-cyan {
+    background: linear-gradient(var(--gradientDegree), var(--purple) 0, var(--cyan) 100%);
+}
+
+.sorrow-bg-purple-cyan-transparent {
+    background: linear-gradient(var(--gradientDegree), var(--purple-transparent) 0, var(--cyan-transparent) 100%);
+}
+
+.sorrow-text-purple-cyan {
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: linear-gradient(var(--gradientDegree), var(--purple) 0, var(--cyan) 100%);
+    background-size: 100%;
+    -webkit-box-decoration-break: clone;
+}
+
+.sorrow-bg-yellow-pink {
+    background: linear-gradient(var(--gradientDegree), var(--yellow) 0, var(--pink) 100%);
+}
+
+.sorrow-bg-yellow-pink-transparent {
+    background: linear-gradient(var(--gradientDegree), var(--yellow-transparent) 0, var(--pink-transparent) 100%);
+}
+
+.sorrow-text-yellow-pink {
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: linear-gradient(var(--gradientDegree), var(--yellow) 0, var(--pink) 100%);
+    background-size: 100%;
+    -webkit-box-decoration-break: clone;
+}
+
+.sorrow-bg-cyan-green {
+    background: linear-gradient(var(--gradientDegree), var(--cyan) 0, var(--green) 100%);
+}
+
+.sorrow-bg-cyan-green-transparent {
+    background: linear-gradient(var(--gradientDegree), var(--cyan-transparent) 0, var(--green-transparent) 100%);
+}
+
+.sorrow-text-cyan-green {
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: linear-gradient(var(--gradientDegree), var(--cyan) 0, var(--green) 100%);
+    background-size: 100%;
+    -webkit-box-decoration-break: clone;
+}
+
+.sorrow-bg-pink-purple {
+    background: linear-gradient(var(--gradientDegree), var(--pink) 0, var(--purple) 100%);
+}
+
+.sorrow-bg-pink-purple-transparent {
+    background: linear-gradient(var(--gradientDegree), var(--pink-transparent) 0, var(--purple-transparent) 100%);
+}
+
+.sorrow-text-pink-purple {
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: linear-gradient(var(--gradientDegree), var(--pink) 0, var(--purple) 100%);
+    background-size: 100%;
+    -webkit-box-decoration-break: clone;
+}
+
+.sorrow-bg-black {
+    background-color: var(--black);
+}
+
+.sorrow-bg-black-secondary {
+    --accentColor: var(--blackSecondary);
+    background-color: var(--blackSecondary);
+}
+
+.sorrow-bg-black-transparent {
+    --accentColor: var(--black-transparent);
+    background-color: var(--black-transparent);
+}
+
+.sorrow-text-black {
+    color: var(--black);
+}
+
+.sorrow-text-black-secondary {
+    color: var(--blackSecondary);
+}
+
+.sorrow-glow-black {
+    --glowColor: var(--black);
+    background-color: var(--black);
+}
+
+.sorrow-border-black {
+    --borderColor: var(--black);
+    border-color: var(--black);
+}
+
+.sorrow-bg-grey {
+    background-color: var(--grey);
+}
+
+.sorrow-bg-grey-secondary {
+    --accentColor: var(--greySecondary);
+    background-color: var(--greySecondary);
+}
+
+.sorrow-bg-grey-ternary {
+    --accentColor: var(--greyTernary);
+    background-color: var(--greyTernary);
+}
+
+.sorrow-bg-grey-transparent {
+    --accentColor: var(--grey-transparent);
+    background-color: var(--grey-transparent);
+}
+
+.sorrow-text-grey {
+    color: var(--grey);
+}
+
+.sorrow-text-grey-secondary {
+    color: var(--greySecondary);
+}
+
+.sorrow-text-grey-ternary {
+    color: var(--greyTernary);
+}
+
+.sorrow-glow-grey {
+    --glowColor: var(--grey);
+    background-color: var(--grey);
+}
+
+.sorrow-border-grey {
+    --borderColor: var(--grey);
+    border-color: var(--grey);
+}
+
+.sorrow-bg-white {
+    background-color: var(--white);
+}
+
+.sorrow-bg-white-secondary {
+    --accentColor: var(--whiteSecondary);
+    background-color: var(--whiteSecondary);
+}
+
+.sorrow-bg-white-transparent {
+    --accentColor: var(--white-transparent);
+    background-color: var(--white-transparent);
+}
+
+.sorrow-text-white {
+    color: var(--white);
+}
+
+.sorrow-text-white-secondary {
+    color: var(--whiteSecondary);
+}
+
+.sorrow-glow-white {
+    --glowColor: var(--white);
+    background-color: var(--white);
+}
+
+.sorrow-border-white {
+    --borderColor: var(--white);
+    border-color: var(--white);
+}
+
+.sorrow-bg-cyan {
+    background-color: var(--cyan);
+}
+
+.sorrow-bg-cyan-secondary {
+    --accentColor: var(--cyanSecondary);
+    background-color: var(--cyanSecondary);
+}
+
+.sorrow-bg-cyan-transparent {
+    --accentColor: var(--cyan-transparent);
+    background-color: var(--cyan-transparent);
+}
+
+.sorrow-text-cyan {
+    color: var(--cyan);
+}
+
+.sorrow-text-cyan-secondary {
+    color: var(--cyanSecondary);
+}
+
+.sorrow-glow-cyan {
+    --glowColor: var(--cyan);
+    background-color: var(--cyan);
+}
+
+.sorrow-border-cyan {
+    --borderColor: var(--cyan);
+    border-color: var(--cyan);
+}
+
+.sorrow-bg-green {
+    background-color: var(--green);
+}
+
+.sorrow-bg-green-secondary {
+    --accentColor: var(--greenSecondary);
+    background-color: var(--greenSecondary);
+}
+
+.sorrow-bg-green-transparent {
+    --accentColor: var(--green-transparent);
+    background-color: var(--green-transparent);
+}
+
+.sorrow-text-green {
+    color: var(--green);
+}
+
+.sorrow-text-green-secondary {
+    color: var(--greenSecondary);
+}
+
+.sorrow-glow-green {
+    --glowColor: var(--green);
+    background-color: var(--green);
+}
+
+.sorrow-border-green {
+    --borderColor: var(--green);
+    border-color: var(--green);
+}
+
+.sorrow-bg-orange {
+    background-color: var(--orange);
+}
+
+.sorrow-bg-orange-secondary {
+    --accentColor: var(--orangeSecondary);
+    background-color: var(--orangeSecondary);
+}
+
+.sorrow-bg-orange-transparent {
+    --accentColor: var(--orange-transparent);
+    background-color: var(--orange-transparent);
+}
+
+.sorrow-text-orange {
+    color: var(--orange);
+}
+
+.sorrow-text-orange-secondary {
+    color: var(--orangeSecondary);
+}
+
+.sorrow-glow-orange {
+    --glowColor: var(--orange);
+    background-color: var(--orange);
+}
+
+.sorrow-border-orange {
+    --borderColor: var(--orange);
+    border-color: var(--orange);
+}
+
+.sorrow-bg-pink {
+    background-color: var(--pink);
+}
+
+.sorrow-bg-pink-secondary {
+    --accentColor: var(--pinkSecondary);
+    background-color: var(--pinkSecondary);
+}
+
+.sorrow-bg-pink-transparent {
+    --accentColor: var(--pink-transparent);
+    background-color: var(--pink-transparent);
+}
+
+.sorrow-text-pink {
+    color: var(--pink);
+}
+
+.sorrow-text-pink-secondary {
+    color: var(--pinkSecondary);
+}
+
+.sorrow-glow-pink {
+    --glowColor: var(--pink);
+    background-color: var(--pink);
+}
+
+.sorrow-border-pink {
+    --borderColor: var(--pink);
+    border-color: var(--pink);
+}
+
+.sorrow-bg-purple {
+    background-color: var(--purple);
+}
+
+.sorrow-bg-purple-secondary {
+    --accentColor: var(--purpleSecondary);
+    background-color: var(--purpleSecondary);
+}
+
+.sorrow-bg-purple-transparent {
+    --accentColor: var(--purple-transparent);
+    background-color: var(--purple-transparent);
+}
+
+.sorrow-text-purple {
+    color: var(--purple);
+}
+
+.sorrow-text-purple-secondary {
+    color: var(--purpleSecondary);
+}
+
+.sorrow-glow-purple {
+    --glowColor: var(--purple);
+    background-color: var(--purple);
+}
+
+.sorrow-border-purple {
+    --borderColor: var(--purple);
+    border-color: var(--purple);
+}
+
+.sorrow-bg-red {
+    background-color: var(--red);
+}
+
+.sorrow-bg-red-secondary {
+    --accentColor: var(--redSecondary);
+    background-color: var(--redSecondary);
+}
+
+.sorrow-bg-red-transparent {
+    --accentColor: var(--red-transparent);
+    background-color: var(--red-transparent);
+}
+
+.sorrow-text-red {
+    color: var(--red);
+}
+
+.sorrow-text-red-secondary {
+    color: var(--redSecondary);
+}
+
+.sorrow-glow-red {
+    --glowColor: var(--red);
+    background-color: var(--red);
+}
+
+.sorrow-border-red {
+    --borderColor: var(--red);
+    border-color: var(--red);
+}
+
+.sorrow-bg-yellow {
+    background-color: var(--yellow);
+}
+
+.sorrow-bg-yellow-secondary {
+    --accentColor: var(--yellowSecondary);
+    background-color: var(--yellowSecondary);
+}
+
+.sorrow-bg-yellow-transparent {
+    --accentColor: var(--yellow-transparent);
+    background-color: var(--yellow-transparent);
+}
+
+.sorrow-text-yellow {
+    color: var(--yellow);
+}
+
+.sorrow-text-yellow-secondary {
+    color: var(--yellowSecondary);
+}
+
+.sorrow-glow-yellow {
+    --glowColor: var(--yellow);
+    background-color: var(--yellow);
+}
+
+.sorrow-border-yellow {
+    --borderColor: var(--yellow);
+    border-color: var(--yellow);
+}
+

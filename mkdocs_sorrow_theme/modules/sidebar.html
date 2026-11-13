@@ -1,0 +1,40 @@
+<nav id="sidebar" class="sidebar sorrow-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        {% if config.theme.logo %}
+            <img class="logo" src="{{ config.theme.logo|url }}" height="150px">
+        {% endif %}
+
+        <div class="sorrow-text-center">
+            {% if config.site_name %}
+                <span class="sorrow-text sorrow-line-height sorrow-text-white">{{ config.site_name }}</span>
+            {% endif %}
+        </div>
+
+        <div class="sorrow-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li sorrow-bg-cyan"></div></li>
+                <li><div class="dot-li sorrow-bg-green"></div></li>
+                <li><div class="dot-li sorrow-bg-orange"></div></li>
+                <li><div class="dot-li sorrow-bg-pink"></div></li>
+                <li><div class="dot-li sorrow-bg-purple"></div></li>
+                <li><div class="dot-li sorrow-bg-red"></div></li>
+                <li><div class="dot-li sorrow-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="sorrow-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 sorrow-list sorrow-list-none">
+            {% include "modules/menu.html" %}
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
