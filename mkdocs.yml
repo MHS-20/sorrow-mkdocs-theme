@@ -1,0 +1,8 @@
+site_name: Sorrow
+nav:
+  - Home: index.md
+markdown_extensions:
+  - admonition
+  - tables
+theme:
+  name: sorrow

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{#- Same stylesheets as the Dracula base, plus the Sorrow palette and
+    highlight. The favicon link appears only when `theme.favicon` is set,
+    so the Dracula icon never shows in browser tabs. -#}
+{%- block styles %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    {%- if config.theme.highlight_css %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/{{ config.theme.highlight_css }}">
+    {%- else %}
+        <link rel="stylesheet" href="{{ 'assets/css/sorrow-highlight.css'|url }}">
+    {%- endif %}
+
+    <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css'|url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/dracula-ui.min.css'|url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/mkdocs.min.css'|url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/sorrow.css'|url }}">
+
+    {%- for path in config.extra_css %}
+        <link href="{{ path|url }}" rel="stylesheet">
+    {%- endfor %}
+
+    {%- if config.theme.favicon %}
+        <link rel="icon" href="{{ config.theme.favicon|url }}">
+    {%- endif %}
+{%- endblock %}

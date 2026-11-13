@@ -1,0 +1,17 @@
+[project]
+name = "mkdocs-sorrow-theme"
+version = "0.1.0"
+description = "MkDocs theme in the Omarchy Sorrow palette, built on the Dracula theme"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "mkdocs>=1.6.1,<2",
+  "mkdocs-dracula-theme>=1.1.0,<1.2",
+]
+
+[project.entry-points."mkdocs.themes"]
+sorrow = "mkdocs_sorrow_theme"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,130 @@
+/*
+ * Sorrow palette for the Dracula MkDocs theme.
+ * Colors come from the Omarchy "sorrow" theme (colors.toml, resolved by
+ * `omarchy-theme-color --all`). Each Dracula token is re-pointed at the
+ * Sorrow color with the same role.
+ */
+:root {
+    --black: #0c0e10;          /* dark_background: sidebar, code blocks */
+    --blackSecondary: #101315; /* background: page */
+    --blackTernary: #a5aeb4;   /* bright_foreground */
+    --grey: #3d1621;           /* selection */
+    --greySecondary: #4b4e55;  /* muted */
+    --greyTernary: #cacccc;    /* foreground: body text */
+    --white: #d9dbdc;          /* yellow slot, the brightest Sorrow tone */
+    --whiteSecondary: #d9dbdc;
+    --disabled: #4b4e55;       /* muted */
+
+    --purple: #8c2a40;         /* accent */
+    --cyan: #a8566a;           /* cyan */
+    --green: #9fa5a9;          /* green */
+    --orange: #c9c2b4;         /* bright_yellow */
+    --pink: #c27a8b;           /* magenta */
+    --red: #b8384f;            /* bright_red */
+    --yellow: #d9dbdc;         /* yellow */
+
+    --glowColor: color-mix(in srgb, var(--white) 25%, transparent);
+    --blackLight: color-mix(in srgb, var(--black) 5%, transparent);
+    --greyLight: color-mix(in srgb, var(--grey) 5%, transparent);
+    --whiteLight: color-mix(in srgb, var(--white) 5%, transparent);
+    --cyanSecondary: color-mix(in srgb, var(--cyan) 60%, var(--white));
+    --cyan-transparent: color-mix(in srgb, var(--cyan) 10%, transparent);
+    --cyan-100: color-mix(in srgb, var(--cyan) 10%, transparent);
+    --cyan-200: color-mix(in srgb, var(--cyan) 20%, transparent);
+    --cyan-300: color-mix(in srgb, var(--cyan) 30%, transparent);
+    --cyan-400: color-mix(in srgb, var(--cyan) 40%, transparent);
+    --cyan-500: color-mix(in srgb, var(--cyan) 50%, transparent);
+    --cyan-600: color-mix(in srgb, var(--cyan) 60%, transparent);
+    --cyan-700: color-mix(in srgb, var(--cyan) 70%, transparent);
+    --cyan-800: color-mix(in srgb, var(--cyan) 80%, transparent);
+    --cyan-900: color-mix(in srgb, var(--cyan) 90%, transparent);
+    --cyanLight: color-mix(in srgb, var(--cyan) 5%, transparent);
+    --greenSecondary: color-mix(in srgb, var(--green) 60%, var(--white));
+    --green-transparent: color-mix(in srgb, var(--green) 10%, transparent);
+    --green-100: color-mix(in srgb, var(--green) 10%, transparent);
+    --green-200: color-mix(in srgb, var(--green) 20%, transparent);
+    --green-300: color-mix(in srgb, var(--green) 30%, transparent);
+    --green-400: color-mix(in srgb, var(--green) 40%, transparent);
+    --green-500: color-mix(in srgb, var(--green) 50%, transparent);
+    --green-600: color-mix(in srgb, var(--green) 60%, transparent);
+    --green-700: color-mix(in srgb, var(--green) 70%, transparent);
+    --green-800: color-mix(in srgb, var(--green) 80%, transparent);
+    --green-900: color-mix(in srgb, var(--green) 90%, transparent);
+    --greenLight: color-mix(in srgb, var(--green) 5%, transparent);
+    --orangeSecondary: color-mix(in srgb, var(--orange) 60%, var(--white));
+    --orange-transparent: color-mix(in srgb, var(--orange) 10%, transparent);
+    --orange-100: color-mix(in srgb, var(--orange) 10%, transparent);
+    --orange-200: color-mix(in srgb, var(--orange) 20%, transparent);
+    --orange-300: color-mix(in srgb, var(--orange) 30%, transparent);
+    --orange-400: color-mix(in srgb, var(--orange) 40%, transparent);
+    --orange-500: color-mix(in srgb, var(--orange) 50%, transparent);
+    --orange-600: color-mix(in srgb, var(--orange) 60%, transparent);
+    --orange-700: color-mix(in srgb, var(--orange) 70%, transparent);
+    --orange-800: color-mix(in srgb, var(--orange) 80%, transparent);
+    --orange-900: color-mix(in srgb, var(--orange) 90%, transparent);
+    --orangeLight: color-mix(in srgb, var(--orange) 5%, transparent);
+    --pinkSecondary: color-mix(in srgb, var(--pink) 60%, var(--white));
+    --pink-transparent: color-mix(in srgb, var(--pink) 10%, transparent);
+    --pink-100: color-mix(in srgb, var(--pink) 10%, transparent);
+    --pink-200: color-mix(in srgb, var(--pink) 20%, transparent);
+    --pink-300: color-mix(in srgb, var(--pink) 30%, transparent);
+    --pink-400: color-mix(in srgb, var(--pink) 40%, transparent);
+    --pink-500: color-mix(in srgb, var(--pink) 50%, transparent);
+    --pink-600: color-mix(in srgb, var(--pink) 60%, transparent);
+    --pink-700: color-mix(in srgb, var(--pink) 70%, transparent);
+    --pink-800: color-mix(in srgb, var(--pink) 80%, transparent);
+    --pink-900: color-mix(in srgb, var(--pink) 90%, transparent);
+    --pinkLight: color-mix(in srgb, var(--pink) 5%, transparent);
+    --purpleSecondary: color-mix(in srgb, var(--purple) 60%, var(--white));
+    --purple-transparent: color-mix(in srgb, var(--purple) 10%, transparent);
+    --purple-100: color-mix(in srgb, var(--purple) 10%, transparent);
+    --purple-200: color-mix(in srgb, var(--purple) 20%, transparent);
+    --purple-300: color-mix(in srgb, var(--purple) 30%, transparent);
+    --purple-400: color-mix(in srgb, var(--purple) 40%, transparent);
+    --purple-500: color-mix(in srgb, var(--purple) 50%, transparent);
+    --purple-600: color-mix(in srgb, var(--purple) 60%, transparent);
+    --purple-700: color-mix(in srgb, var(--purple) 70%, transparent);
+    --purple-800: color-mix(in srgb, var(--purple) 80%, transparent);
+    --purple-900: color-mix(in srgb, var(--purple) 90%, transparent);
+    --purpleLight: color-mix(in srgb, var(--purple) 5%, transparent);
+    --redSecondary: color-mix(in srgb, var(--red) 60%, var(--white));
+    --red-transparent: color-mix(in srgb, var(--red) 10%, transparent);
+    --red-100: color-mix(in srgb, var(--red) 10%, transparent);
+    --red-200: color-mix(in srgb, var(--red) 20%, transparent);
+    --red-300: color-mix(in srgb, var(--red) 30%, transparent);
+    --red-400: color-mix(in srgb, var(--red) 40%, transparent);
+    --red-500: color-mix(in srgb, var(--red) 50%, transparent);
+    --red-600: color-mix(in srgb, var(--red) 60%, transparent);
+    --red-700: color-mix(in srgb, var(--red) 70%, transparent);
+    --red-800: color-mix(in srgb, var(--red) 80%, transparent);
+    --red-900: color-mix(in srgb, var(--red) 90%, transparent);
+    --redLight: color-mix(in srgb, var(--red) 5%, transparent);
+    --yellowSecondary: color-mix(in srgb, var(--yellow) 60%, var(--white));
+    --yellow-transparent: color-mix(in srgb, var(--yellow) 10%, transparent);
+    --yellow-100: color-mix(in srgb, var(--yellow) 10%, transparent);
+    --yellow-200: color-mix(in srgb, var(--yellow) 20%, transparent);
+    --yellow-300: color-mix(in srgb, var(--yellow) 30%, transparent);
+    --yellow-400: color-mix(in srgb, var(--yellow) 40%, transparent);
+    --yellow-500: color-mix(in srgb, var(--yellow) 50%, transparent);
+    --yellow-600: color-mix(in srgb, var(--yellow) 60%, transparent);
+    --yellow-700: color-mix(in srgb, var(--yellow) 70%, transparent);
+    --yellow-800: color-mix(in srgb, var(--yellow) 80%, transparent);
+    --yellow-900: color-mix(in srgb, var(--yellow) 90%, transparent);
+    --yellowLight: color-mix(in srgb, var(--yellow) 5%, transparent);
+}
+
+/* Divider between sidebar and content shares the sidebar color. */
+.divider.drac-bg-purple-cyan {
+    background: var(--black);
+}
+
+/* Dracula hardcodes admonition title tints as rgba(); re-tint from the palette. */
+.admonition.note .admonition-title,.admonition.example .admonition-title { background: color-mix(in srgb, var(--purple) 15%, transparent); }
+.admonition.abstract .admonition-title,.admonition.summary .admonition-title,.admonition.tldr .admonition-title,.admonition.info .admonition-title { background: color-mix(in srgb, var(--cyan) 15%, transparent); }
+.admonition.tip .admonition-title,.admonition.hint .admonition-title,.admonition.important .admonition-title,.admonition.success .admonition-title,.admonition.check .admonition-title,.admonition.done .admonition-title { background: color-mix(in srgb, var(--green) 15%, transparent); }
+.admonition.question .admonition-title,.admonition.help .admonition-title,.admonition.faq .admonition-title { background: color-mix(in srgb, var(--yellow) 15%, transparent); }
+.admonition.warning .admonition-title,.admonition.caution .admonition-title,.admonition.attention .admonition-title { background: color-mix(in srgb, var(--orange) 15%, transparent); }
+.admonition.failure .admonition-title,.admonition.fail .admonition-title,.admonition.missing .admonition-title { background: color-mix(in srgb, var(--pink) 15%, transparent); }
+.admonition.danger .admonition-title,.admonition.error .admonition-title,.admonition.bug .admonition-title { background: color-mix(in srgb, var(--red) 15%, transparent); }
+.admonition.quote, .admonition.cite { background: color-mix(in srgb, var(--grey) 20%, transparent); }
+.admonition.quote .admonition-title, .admonition.cite .admonition-title { background: color-mix(in srgb, var(--grey) 30%, transparent); }

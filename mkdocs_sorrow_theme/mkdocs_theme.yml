@@ -1,0 +1,2 @@
+# Inherits templates, assets and options from the Dracula theme.
+extends: dracula

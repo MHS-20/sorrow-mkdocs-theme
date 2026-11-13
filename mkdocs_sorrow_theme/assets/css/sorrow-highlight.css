@@ -1,0 +1,150 @@
+/*
+ * highlight.js colors for the Sorrow palette.
+ * Scopes follow Omarchy's helix.toml.tpl syntax mapping, with Omarchy's
+ * colorN names: color1 #8c2a40, color2 #9fa5a9, color3 #d9dbdc,
+ * color4 #798186, color5 #c27a8b, color6 #a8566a, color8 #4b4e55.
+ */
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+code.hljs {
+  padding: 3px 5px;
+}
+
+.hljs {
+  color: #cacccc;
+  background: var(--black);
+}
+
+.hljs::selection,
+.hljs ::selection {
+  background-color: #3d1621;
+  color: #a5aeb4;
+}
+
+/* comment */
+.hljs-comment {
+  color: #4b4e55;
+  font-style: italic;
+}
+
+/* punctuation */
+.hljs-punctuation,
+.hljs-meta {
+  color: #4b4e55;
+}
+
+/* variable, subst */
+.hljs-variable,
+.hljs-subst,
+.hljs-property {
+  color: #cacccc;
+}
+
+/* keyword */
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-meta-keyword,
+.hljs-template-tag,
+.hljs-selector-pseudo {
+  color: #c27a8b;
+}
+
+/* variable.parameter */
+.hljs-params {
+  color: #c27a8b;
+  font-style: italic;
+}
+
+/* string.regexp, constant.character.escape, special */
+.hljs-regexp,
+.hljs-char.escape_,
+.hljs-template-variable {
+  color: #c27a8b;
+}
+
+/* function, function.builtin, tag, label */
+.hljs-title.function_,
+.hljs-function .hljs-title,
+.hljs-built_in,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-tag {
+  color: #798186;
+}
+
+/* type, constant, attribute */
+.hljs-type,
+.hljs-title,
+.hljs-title.class_,
+.hljs-class .hljs-title,
+.hljs-number,
+.hljs-literal,
+.hljs-variable.constant_,
+.hljs-attr,
+.hljs-attribute,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  color: #d9dbdc;
+}
+
+/* string, markup.raw */
+.hljs-string,
+.hljs-meta .hljs-string,
+.hljs-code,
+.hljs-title.class_.inherited__ {
+  color: #9fa5a9;
+}
+
+/* constant.character, operator, markup.list */
+.hljs-symbol,
+.hljs-operator,
+.hljs-bullet {
+  color: #a8566a;
+}
+
+/* variable.builtin */
+.hljs-variable.language_ {
+  color: #8c2a40;
+}
+
+/* markup.heading.1 */
+.hljs-section {
+  color: #8c2a40;
+}
+
+/* markup.bold, markup.italic */
+.hljs-strong {
+  color: #8c2a40;
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  color: #8c2a40;
+  font-style: italic;
+}
+
+/* markup.link.url */
+.hljs-link {
+  color: #798186;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* markup.quote */
+.hljs-quote {
+  color: #c27a8b;
+}
+
+/* diff */
+.hljs-addition {
+  color: #9fa5a9;
+}
+
+.hljs-deletion {
+  color: #8c2a40;
+}
