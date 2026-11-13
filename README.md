@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/sorrow-title.png" alt="Sorrow" width="600">
+  <img src="https://raw.githubusercontent.com/MHS-20/sorrow-mkdocs-theme/main/assets/sorrow-title.png" alt="Sorrow" width="600">
 </p>
 
 # mkdocs-sorrow-theme
@@ -9,13 +9,13 @@ the [Dracula theme for MkDocs](https://github.com/dracula/mkdocs): it keeps
 Dracula's layout and replaces its colors and code highlighting.
 
 <p align="center">
-  <img src="assets/screenshot.png" alt="Sorrow theme screenshot" width="800">
+  <img src="https://raw.githubusercontent.com/MHS-20/sorrow-mkdocs-theme/main/assets/screenshot.png" alt="Sorrow theme screenshot" width="800">
 </p>
 
 ## Install
 
 ```sh
-pip install git+https://github.com/MHS-20/sorrow-mkdocs-theme
+pip install mkdocs-sorrow-theme
 ```
 
 Then, in `mkdocs.yml`:
