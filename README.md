@@ -1,13 +1,17 @@
+<p align="center">
+  <img src="assets/sorrow-title.png" alt="Sorrow" width="600">
+</p>
+
 # mkdocs-sorrow-theme
 
-An MkDocs theme in the palette of the Omarchy **Sorrow** theme. It extends the
-[Dracula theme for MkDocs](https://github.com/dracula/mkdocs) and keeps its
-layout, while replacing its colors and code highlighting.
+An MkDocs theme in the palette inspired from Omarchy **Solitude** theme. It is based on
+the [Dracula theme for MkDocs](https://github.com/dracula/mkdocs): it keeps
+Dracula's layout and replaces its colors and code highlighting.
 
 ## Install
 
 ```sh
-pip install git+<repository-url>
+pip install git+https://github.com/MHS-20/sorrow-mkdocs-theme
 ```
 
 Then, in `mkdocs.yml`:
@@ -19,27 +23,29 @@ theme:
   logo: assets/logo.png        # optional sidebar logo
 ```
 
-All Dracula theme options (`highlightjs`, `hljs_languages`, `highlight_css`)
-still apply. The theme has no footer, so `show_footer` has no effect.
+`highlightjs` (default `true`) and `hljs_languages` control highlight.js.
+There is no footer and no option to load other highlight styles.
 
 ## How it works
 
-`mkdocs_theme.yml` declares `extends: dracula`, so MkDocs loads the Dracula
-templates and assets behind this package's files. The theme adds:
+The Dracula templates and layout assets are copied into this package rather
+than inherited with `extends: dracula`, because MkDocs copies every file of a
+parent theme into the built site. Copying lets the theme leave out Dracula's
+highlight stylesheet, logo, favicon, footer and color tokens.
 
-- `assets/css/sorrow.css`: redefines Dracula's color tokens with Sorrow
-  colors, and gives the sidebar divider the sidebar color.
+- `base.html` and `modules/`: Dracula's templates. The sidebar divider uses
+  the sidebar color, a favicon is linked only when `theme.favicon` is set, and
+  the footer is removed. CSS classes use the prefix `sorrow-` instead of
+  `drac-`.
+- `assets/css/sorrow-ui.css`, `assets/css/mkdocs.min.css`: Dracula's
+  stylesheets without its color tokens; admonition tints read the tokens.
+- `assets/css/sorrow.css`: the color tokens.
 - `assets/css/sorrow-highlight.css`: highlight.js colors following Omarchy's
   syntax mapping (`default/themed/helix.toml.tpl`).
-- `main.html`: overrides the `styles` block to load both stylesheets and to
-  link a favicon only when `theme.favicon` is set, and empties the `footer`
-  block.
-- `404.html`: extends `main.html`, because Dracula's 404 page extends
-  `base.html` directly and would skip the Sorrow styles.
 
 ## Palette
 
-| Dracula token | Sorrow key | Color |
+| Token | Sorrow key | Color |
 | --- | --- | --- |
 | `--black` (sidebar, code) | `dark_background` | `#0c0e10` |
 | `--blackSecondary` (page) | `background` | `#101315` |
@@ -47,15 +53,16 @@ templates and assets behind this package's files. The theme adds:
 | `--white` | `yellow` | `#d9dbdc` |
 | `--grey` | `selection` | `#3d1621` |
 | `--greySecondary` | `muted` | `#4b4e55` |
-| `--purple` | `accent` | `#8c2a40` |
-| `--cyan` | `cyan` | `#a8566a` |
+| `--purple` | `accent` | `#7a1a2c` |
+| `--cyan` | `cyan` | `#943a4c` |
 | `--green` | `green` | `#9fa5a9` |
 | `--orange` | `bright_yellow` | `#c9c2b4` |
-| `--pink` | `magenta` | `#c27a8b` |
-| `--red` | `bright_red` | `#b8384f` |
+| `--pink` | `magenta` | `#a8495b` |
+| `--red` | `bright_red` | `#a82a3c` |
 | `--yellow` | `yellow` | `#d9dbdc` |
 
-Lighter and translucent variants are derived with `color-mix()`.
+The four reds are darker than the Sorrow originals. Lighter and translucent
+variants are derived with `color-mix()`.
 
 ## Develop
 

@@ -32,5 +32,5 @@ for f in *.md; do echo "$f"; done
 
 | Key | Value |
 | --- | ----- |
-| accent | `#8c2a40` |
+| accent | `#7a1a2c` |
 | background | `#101315` |
