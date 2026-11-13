@@ -1,0 +1,86 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write        # create tags & GitHub releases
+  issues: write          # semantic-release can comment on issues
+  pull-requests: write   # semantic-release can comment on PRs
+
+jobs:
+  # 1. Check that the theme builds the demo site
+  check:
+    name: Build check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0   # hatch-vcs reads the version from git tags
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Build demo site
+        run: |
+          pip install .
+          mkdocs build --strict
+
+  # 2. Semantic Release: tag and GitHub release from Conventional Commits
+  release:
+    name: Semantic Release
+    runs-on: ubuntu-latest
+    needs: check
+    outputs:
+      released: ${{ steps.semrel.outputs.new_release_published }}
+      version:  ${{ steps.semrel.outputs.new_release_version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Run semantic-release
+        id: semrel
+        uses: cycjimmy/semantic-release-action@v8
+        with:
+          extra_plugins: |
+            @semantic-release/github
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # 3. Build the tagged commit and publish it to PyPI (trusted publishing)
+  pypi:
+    name: Publish to PyPI
+    runs-on: ubuntu-latest
+    needs: release
+    if: needs.release.outputs.released == 'true'
+    environment:
+      name: pypi
+      url: https://pypi.org/p/mkdocs-sorrow-theme
+    permissions:
+      id-token: write    # required for trusted publishing
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: v${{ needs.release.outputs.version }}
+          fetch-depth: 0   # hatch-vcs reads the version from the tag
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Build distributions
+        run: |
+          pip install build
+          python -m build
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1

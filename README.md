@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="https://pypi.org/project/mkdocs-sorrow-theme/"><img src="https://img.shields.io/pypi/v/mkdocs-sorrow-theme" alt="PyPI version"></a>
+  <a href="https://github.com/MHS-20/sorrow-mkdocs-theme/actions/workflows/release.yml"><img src="https://github.com/MHS-20/sorrow-mkdocs-theme/actions/workflows/release.yml/badge.svg" alt="Release workflow status"></a>
   <a href="https://github.com/MHS-20/sorrow-mkdocs-theme/actions/workflows/docs.yml"><img src="https://github.com/MHS-20/sorrow-mkdocs-theme/actions/workflows/docs.yml/badge.svg" alt="Docs workflow status"></a>
   <a href="https://mhs-20.github.io/sorrow-mkdocs-theme/"><img src="https://img.shields.io/badge/demo-GitHub%20Pages-7a1a2c" alt="Live demo"></a>
 </p>
@@ -85,6 +86,16 @@ uv run mkdocs serve
 
 The demo site is built from `docs/` and `mkdocs.yml`. Every push to `main`
 deploys it to GitHub Pages through `.github/workflows/docs.yml`.
+
+## Release
+
+Releases are automated by `.github/workflows/release.yml` on every push to
+`main`. semantic-release reads the Conventional Commits since the last tag,
+following `.releaserc.json`: `feat` releases a minor version, `fix` a patch,
+and a breaking change a major. It then tags the commit (`vX.Y.Z`) and creates
+the GitHub release. A final job builds that tag and publishes it to PyPI
+through trusted publishing, so no API token is stored. The package version
+comes from the git tag through `hatch-vcs`.
 
 ## Credits
 

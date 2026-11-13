@@ -1,6 +1,6 @@
 [project]
 name = "mkdocs-sorrow-theme"
-version = "0.1.0"
+dynamic = ["version"]
 description = "MkDocs theme in the Omarchy Sorrow palette"
 readme = "README.md"
 license = "MIT"
@@ -29,8 +29,11 @@ Issues = "https://github.com/MHS-20/sorrow-mkdocs-theme/issues"
 sorrow = "mkdocs_sorrow_theme"
 
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.sdist]
 include = ["mkdocs_sorrow_theme", "LICENSE", "README.md"]
+
+[tool.hatch.version]
+source = "vcs"
