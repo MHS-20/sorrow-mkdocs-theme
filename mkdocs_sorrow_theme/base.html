@@ -29,9 +29,7 @@
             <link href="{{ path|url }}" rel="stylesheet">
         {%- endfor %}
 
-        {%- if config.theme.favicon %}
-            <link rel="icon" href="{{ config.theme.favicon|url }}">
-        {%- endif %}
+        <link rel="icon" href="{{ (config.theme.favicon or 'assets/img/favicon.ico')|url }}">
 
     {%- endblock %}
 

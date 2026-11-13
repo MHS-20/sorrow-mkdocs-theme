@@ -119,3 +119,14 @@
     --yellowLight: color-mix(in srgb, var(--yellow) 5%, transparent);
 }
 
+
+/* Content links: the base link color matches body text, so links need their own color. */
+.section-content article a {
+    color: var(--pink);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.section-content article a:hover {
+    color: var(--white);
+}

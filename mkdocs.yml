@@ -6,4 +6,3 @@ markdown_extensions:
   - tables
 theme:
   name: sorrow
-  favicon: assets/favicon.ico

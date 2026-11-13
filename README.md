@@ -23,7 +23,7 @@ Then, in `mkdocs.yml`:
 ```yaml
 theme:
   name: sorrow
-  favicon: assets/favicon.ico  # optional; no favicon is linked without it
+  favicon: assets/favicon.ico  # optional; defaults to the Sorrow icon
   logo: assets/logo.png        # optional sidebar logo
 ```
 
@@ -38,7 +38,7 @@ parent theme into the built site. Copying lets the theme leave out Dracula's
 highlight stylesheet, logo, favicon, footer and color tokens.
 
 - `base.html` and `modules/`: Dracula's templates. The sidebar divider uses
-  the sidebar color, a favicon is linked only when `theme.favicon` is set, and
+  the sidebar color, the favicon defaults to the Sorrow icon, and
   the footer is removed. CSS classes use the prefix `sorrow-` instead of
   `drac-`.
 - `assets/css/sorrow-ui.css`, `assets/css/mkdocs.min.css`: Dracula's
