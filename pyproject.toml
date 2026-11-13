@@ -3,6 +3,8 @@ name = "mkdocs-sorrow-theme"
 version = "0.1.0"
 description = "MkDocs theme in the Omarchy Sorrow palette, built on the Dracula theme"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.9"
 dependencies = [
   "mkdocs>=1.6.1,<2",

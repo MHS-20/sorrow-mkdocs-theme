@@ -19,8 +19,8 @@ theme:
   logo: assets/logo.png        # optional sidebar logo
 ```
 
-All Dracula theme options (`highlightjs`, `hljs_languages`, `highlight_css`,
-`show_footer`) still apply.
+All Dracula theme options (`highlightjs`, `hljs_languages`, `highlight_css`)
+still apply. The theme has no footer, so `show_footer` has no effect.
 
 ## How it works
 
@@ -32,7 +32,8 @@ templates and assets behind this package's files. The theme adds:
 - `assets/css/sorrow-highlight.css`: highlight.js colors following Omarchy's
   syntax mapping (`default/themed/helix.toml.tpl`).
 - `main.html`: overrides the `styles` block to load both stylesheets and to
-  link a favicon only when `theme.favicon` is set.
+  link a favicon only when `theme.favicon` is set, and empties the `footer`
+  block.
 - `404.html`: extends `main.html`, because Dracula's 404 page extends
   `base.html` directly and would skip the Sorrow styles.
 
@@ -65,4 +66,4 @@ uv run mkdocs serve
 
 ## Credits
 
-Built on the MIT-licensed [Dracula theme for MkDocs](https://github.com/dracula/mkdocs).
+Released under the MIT License. Built on the MIT-licensed [Dracula theme for MkDocs](https://github.com/dracula/mkdocs).
