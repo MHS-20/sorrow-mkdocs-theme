@@ -8,6 +8,10 @@ An MkDocs theme in the palette inspired from Omarchy **Solitude** theme. It is b
 the [Dracula theme for MkDocs](https://github.com/dracula/mkdocs): it keeps
 Dracula's layout and replaces its colors and code highlighting.
 
+<p align="center">
+  <img src="assets/screenshot.png" alt="Sorrow theme screenshot" width="800">
+</p>
+
 ## Install
 
 ```sh
