@@ -2,6 +2,10 @@
   <img src="https://raw.githubusercontent.com/MHS-20/sorrow-mkdocs-theme/main/assets/sorrow-title.png" alt="Sorrow" width="600">
 </p>
 
+<p align="center">
+  <a href="https://pypi.org/project/mkdocs-sorrow-theme/"><img src="https://img.shields.io/pypi/v/mkdocs-sorrow-theme" alt="PyPI version"></a>
+</p>
+
 # mkdocs-sorrow-theme
 
 An MkDocs theme in the palette inspired from Omarchy **Solitude** theme. It is based on
