@@ -1,8 +1,18 @@
 site_name: Sorrow
+site_description: A dark MkDocs theme in the palette of the Omarchy Sorrow theme
+site_url: https://mhs-20.github.io/sorrow-mkdocs-theme/
+repo_url: https://github.com/MHS-20/sorrow-mkdocs-theme
+repo_name: MHS-20/sorrow-mkdocs-theme
 nav:
   - Home: index.md
+  - Showcase:
+      - Typography: showcase/typography.md
+      - Code: showcase/code.md
+      - Admonitions: showcase/admonitions.md
 markdown_extensions:
   - admonition
   - tables
+  - toc:
+      permalink: false
 theme:
   name: sorrow

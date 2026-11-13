@@ -12,6 +12,8 @@ An MkDocs theme in the palette inspired from Omarchy **Solitude** theme. It is b
 the [Dracula theme for MkDocs](https://github.com/dracula/mkdocs): it keeps
 Dracula's layout and replaces its colors and code highlighting.
 
+See the live demo at <https://mhs-20.github.io/sorrow-mkdocs-theme/>.
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/MHS-20/sorrow-mkdocs-theme/main/assets/screenshot.png" alt="Sorrow theme screenshot" width="800">
 </p>
@@ -78,6 +80,9 @@ variants are derived with `color-mix()`.
 uv venv && uv pip install -e .
 uv run mkdocs serve
 ```
+
+The demo site is built from `docs/` and `mkdocs.yml`. Every push to `main`
+deploys it to GitHub Pages through `.github/workflows/docs.yml`.
 
 ## Credits
 

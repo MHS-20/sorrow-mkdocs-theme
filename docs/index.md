@@ -1,36 +1,25 @@
 # Sorrow
 
-Preview page for the theme.
+A dark MkDocs theme in the palette of the Omarchy **Sorrow** theme. This site
+is the theme's demo: every page shows how it renders common Markdown.
 
-## Code
-
-```python
-import os
-
-# Read a setting with a default.
-def setting(name: str, default: int = 0) -> int:
-    value = os.environ.get(name)
-    return int(value) if value is not None else default
-```
+## Install
 
 ```bash
-for f in *.md; do echo "$f"; done
+pip install mkdocs-sorrow-theme
 ```
 
-## Admonitions
+Then select it in `mkdocs.yml`:
 
-!!! note
-    Note admonition.
+```yaml
+theme:
+  name: sorrow
+```
 
-!!! warning
-    Warning admonition.
+## Showcase
 
-!!! danger
-    Danger admonition.
+- [Typography](showcase/typography.md): headings, lists, links, inline code and tables.
+- [Code](showcase/code.md): syntax highlighting in several languages.
+- [Admonitions](showcase/admonitions.md): every admonition type the theme colors.
 
-## Table
-
-| Key | Value |
-| --- | ----- |
-| accent | `#7a1a2c` |
-| background | `#101315` |
+The source is on [GitHub](https://github.com/MHS-20/sorrow-mkdocs-theme).
