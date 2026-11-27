@@ -8,3 +8,7 @@ search_index_only: false
 
 highlightjs: true
 hljs_languages: []
+
+# Render ```mermaid blocks as diagrams in the Sorrow palette.
+mermaid: false
+mermaid_version: "11.4.1"

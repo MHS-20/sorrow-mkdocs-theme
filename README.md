@@ -39,6 +39,13 @@ theme:
 `highlightjs` (default `true`) and `hljs_languages` control highlight.js.
 There is no footer and no option to load other highlight styles.
 
+`mermaid: true` (default `false`) renders fenced `mermaid` blocks as diagrams
+colored from the theme's tokens; `mermaid_version` (default `11.4.1`) picks the
+Mermaid release loaded from jsDelivr. Plain fences work as they are, and so
+does a `pymdownx.superfences` custom fence that outputs `<div class="mermaid">`.
+
+Scripts in `extra_javascript` keep their `type`, `async` and `defer` settings.
+
 ## How it works
 
 The Dracula templates and layout assets are copied into this package rather

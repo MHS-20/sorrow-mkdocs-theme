@@ -84,8 +84,13 @@
         <script src="{{ 'assets/js/bootstrap.bundle.min.js'|url }}"></script>
         <script src="{{ 'assets/js/mkdocs.js'|url }}"></script>
 
-        {%- for path in extra_javascript %}
-			<script src="{{ path }}" defer></script>
+        {%- if config.theme.mermaid %}
+            <script src="https://cdn.jsdelivr.net/npm/mermaid@{{ config.theme.mermaid_version }}/dist/mermaid.min.js" defer></script>
+            <script src="{{ 'assets/js/sorrow-mermaid.js'|url }}" defer></script>
+        {%- endif %}
+
+        {%- for script in config.extra_javascript %}
+            {{ script | script_tag }}
         {%- endfor %}
 
     {%- endblock %}
