@@ -36,7 +36,7 @@ Then, in `mkdocs.yml`:
 ```yaml
 theme:
   name: sorrow
-  favicon: assets/favicon.ico  # optional; defaults to the Sorrow icon
+  favicon: assets/favicon.ico  # optional; defaults to the Sorrow icon of the active palette
   logo: assets/logo.png        # optional sidebar logo
   mermaid: true                # optional, 0.3.0+; renders mermaid diagrams
   palette: red                 # optional; red, green or blue

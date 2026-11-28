@@ -33,7 +33,12 @@
             <link href="{{ path|url }}" rel="stylesheet">
         {%- endfor %}
 
-        <link rel="icon" href="{{ (config.theme.favicon or 'assets/img/favicon.ico')|url }}">
+        {%- if config.theme.favicon %}
+            <link rel="icon" href="{{ config.theme.favicon|url }}">
+        {%- else %}
+            <link rel="icon" href="{{ 'assets/img/favicon.ico'|url }}" data-palette-icons="{{ 'assets/img/favicon'|url }}">
+            <script>(function (link) { var p = document.documentElement.dataset.palette; if (p !== "red") link.href = link.dataset.paletteIcons + "-" + p + ".ico"; })(document.currentScript.previousElementSibling);</script>
+        {%- endif %}
 
     {%- endblock %}
 
