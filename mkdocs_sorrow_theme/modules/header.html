@@ -26,6 +26,14 @@
                     </li>
                     <!--  endblock -->
 
+                    <!-- block palette -->
+                    {%- if config.theme.palette_switch %}
+                    <li class="nav-item d-flex align-items-center">
+                        <button type="button" class="palette-switch" title="Switch palette" aria-label="Switch palette"></button>
+                    </li>
+                    {%- endif %}
+                    <!--  endblock -->
+
                     <!-- block source -->
                     <li class="nav-item">
                         {% if config.repo_url %}

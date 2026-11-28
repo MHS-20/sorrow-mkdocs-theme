@@ -1,8 +1,7 @@
 /*
  * highlight.js colors for the Sorrow palette.
- * Scopes follow Omarchy's helix.toml.tpl syntax mapping, with Omarchy's
- * colorN names: color1 #7a1a2c, color2 #9fa5a9, color3 #d9dbdc,
- * color4 #798186, color5 #a8495b, color6 #943a4c, color8 #4b4e55.
+ * Scopes follow Omarchy's helix.toml.tpl syntax mapping. Colors read the
+ * tokens in sorrow.css, so code follows the active palette.
  */
 pre code.hljs {
   display: block;
@@ -15,33 +14,33 @@ code.hljs {
 }
 
 .hljs {
-  color: #cacccc;
+  color: var(--greyTernary);
   background: var(--black);
 }
 
 .hljs::selection,
 .hljs ::selection {
-  background-color: #3d1621;
-  color: #a5aeb4;
+  background-color: var(--grey);
+  color: var(--blackTernary);
 }
 
 /* comment */
 .hljs-comment {
-  color: #4b4e55;
+  color: var(--greySecondary);
   font-style: italic;
 }
 
 /* punctuation */
 .hljs-punctuation,
 .hljs-meta {
-  color: #4b4e55;
+  color: var(--greySecondary);
 }
 
 /* variable, subst */
 .hljs-variable,
 .hljs-subst,
 .hljs-property {
-  color: #cacccc;
+  color: var(--greyTernary);
 }
 
 /* keyword */
@@ -50,12 +49,12 @@ code.hljs {
 .hljs-meta-keyword,
 .hljs-template-tag,
 .hljs-selector-pseudo {
-  color: #a8495b;
+  color: var(--pink);
 }
 
 /* variable.parameter */
 .hljs-params {
-  color: #a8495b;
+  color: var(--pink);
   font-style: italic;
 }
 
@@ -63,7 +62,7 @@ code.hljs {
 .hljs-regexp,
 .hljs-char.escape_,
 .hljs-template-variable {
-  color: #a8495b;
+  color: var(--pink);
 }
 
 /* function, function.builtin, tag, label */
@@ -73,7 +72,7 @@ code.hljs {
 .hljs-tag,
 .hljs-name,
 .hljs-selector-tag {
-  color: #798186;
+  color: var(--blue);
 }
 
 /* type, constant, attribute */
@@ -89,7 +88,7 @@ code.hljs {
 .hljs-selector-attr,
 .hljs-selector-class,
 .hljs-selector-id {
-  color: #d9dbdc;
+  color: var(--white);
 }
 
 /* string, markup.raw */
@@ -97,54 +96,54 @@ code.hljs {
 .hljs-meta .hljs-string,
 .hljs-code,
 .hljs-title.class_.inherited__ {
-  color: #9fa5a9;
+  color: var(--green);
 }
 
 /* constant.character, operator, markup.list */
 .hljs-symbol,
 .hljs-operator,
 .hljs-bullet {
-  color: #943a4c;
+  color: var(--cyan);
 }
 
 /* variable.builtin */
 .hljs-variable.language_ {
-  color: #7a1a2c;
+  color: var(--purple);
 }
 
 /* markup.heading.1 */
 .hljs-section {
-  color: #7a1a2c;
+  color: var(--purple);
 }
 
 /* markup.bold, markup.italic */
 .hljs-strong {
-  color: #7a1a2c;
+  color: var(--purple);
   font-weight: bold;
 }
 
 .hljs-emphasis {
-  color: #7a1a2c;
+  color: var(--purple);
   font-style: italic;
 }
 
 /* markup.link.url */
 .hljs-link {
-  color: #798186;
+  color: var(--blue);
   font-style: italic;
   text-decoration: underline;
 }
 
 /* markup.quote */
 .hljs-quote {
-  color: #a8495b;
+  color: var(--pink);
 }
 
 /* diff */
 .hljs-addition {
-  color: #9fa5a9;
+  color: var(--green);
 }
 
 .hljs-deletion {
-  color: #7a1a2c;
+  color: var(--purple);
 }

@@ -2,6 +2,7 @@
 // Accepts plain ```mermaid fences (<pre><code class="language-mermaid">) and
 // pymdownx.superfences' <div class="mermaid">. Runs deferred, so it swaps the
 // code blocks out before highlight.js sees them on DOMContentLoaded.
+// Diagrams re-render on "sorrow:palette" so they follow the active palette.
 (function () {
     if (typeof mermaid === "undefined") return;
 
@@ -12,31 +13,44 @@
         code.parentElement.replaceWith(div);
     });
 
-    var css = getComputedStyle(document.documentElement);
-    var token = function (name) { return css.getPropertyValue(name).trim(); };
+    var diagrams = Array.prototype.slice.call(document.querySelectorAll(".mermaid"));
+    var sources = diagrams.map(function (div) { return div.textContent; });
 
-    mermaid.initialize({
-        startOnLoad: false,
-        theme: "base",
-        themeVariables: {
-            darkMode: true,
-            background: token("--blackSecondary"),
-            fontFamily: getComputedStyle(document.body).fontFamily,
-            primaryColor: token("--black"),
-            primaryTextColor: token("--greyTernary"),
-            primaryBorderColor: token("--cyan"),
-            secondaryColor: token("--grey"),
-            tertiaryColor: token("--blackSecondary"),
-            lineColor: token("--blackTernary"),
-            textColor: token("--greyTernary"),
-            mainBkg: token("--black"),
-            nodeBorder: token("--cyan"),
-            clusterBkg: token("--black"),
-            titleColor: token("--white"),
-            edgeLabelBackground: token("--blackSecondary"),
-            noteBkgColor: token("--grey"),
-            noteTextColor: token("--white")
-        }
-    });
-    mermaid.run({ querySelector: ".mermaid" });
+    function render() {
+        var css = getComputedStyle(document.documentElement);
+        var token = function (name) { return css.getPropertyValue(name).trim(); };
+
+        diagrams.forEach(function (div, i) {
+            div.removeAttribute("data-processed");
+            div.textContent = sources[i];
+        });
+
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: "base",
+            themeVariables: {
+                darkMode: true,
+                background: token("--blackSecondary"),
+                fontFamily: getComputedStyle(document.body).fontFamily,
+                primaryColor: token("--black"),
+                primaryTextColor: token("--greyTernary"),
+                primaryBorderColor: token("--cyan"),
+                secondaryColor: token("--grey"),
+                tertiaryColor: token("--blackSecondary"),
+                lineColor: token("--blackTernary"),
+                textColor: token("--greyTernary"),
+                mainBkg: token("--black"),
+                nodeBorder: token("--cyan"),
+                clusterBkg: token("--black"),
+                titleColor: token("--white"),
+                edgeLabelBackground: token("--blackSecondary"),
+                noteBkgColor: token("--grey"),
+                noteTextColor: token("--white")
+            }
+        });
+        mermaid.run({ nodes: diagrams });
+    }
+
+    render();
+    document.addEventListener("sorrow:palette", render);
 })();

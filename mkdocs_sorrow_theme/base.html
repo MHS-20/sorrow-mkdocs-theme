@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="dark" data-palette="{{ config.theme.palette }}">
 
 <head>
     {%- block htmltitle %}
@@ -15,6 +15,10 @@
         {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
         {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
     {%- endblock %}
+
+    {%- if config.theme.palette_switch %}
+        <script>try { document.documentElement.dataset.palette = localStorage.getItem("sorrow-palette") || document.documentElement.dataset.palette; } catch (e) {}</script>
+    {%- endif %}
 
     {%- block styles %}
 
@@ -83,6 +87,9 @@
         <script src="{{ 'assets/js/jquery-3.3.1.slim.min.js'|url }}"></script>
         <script src="{{ 'assets/js/bootstrap.bundle.min.js'|url }}"></script>
         <script src="{{ 'assets/js/mkdocs.js'|url }}"></script>
+        {%- if config.theme.palette_switch %}
+            <script src="{{ 'assets/js/sorrow-palette.js'|url }}"></script>
+        {%- endif %}
 
         {%- if config.theme.mermaid %}
             <script src="https://cdn.jsdelivr.net/npm/mermaid@{{ config.theme.mermaid_version }}/dist/mermaid.min.js" defer></script>

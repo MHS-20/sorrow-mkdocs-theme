@@ -59,7 +59,7 @@ highlight stylesheet, logo, favicon, footer and color tokens.
   `drac-`.
 - `assets/css/sorrow-ui.css`, `assets/css/mkdocs.min.css`: Dracula's
   stylesheets without its color tokens; admonition tints read the tokens.
-- `assets/css/sorrow.css`: the color tokens.
+- `assets/css/sorrow.css`: the color tokens and the palettes.
 - `assets/css/sorrow-highlight.css`: highlight.js colors following Omarchy's
   syntax mapping (`default/themed/helix.toml.tpl`).
 
@@ -83,6 +83,21 @@ highlight stylesheet, logo, favicon, footer and color tokens.
 
 The four reds are darker than the Sorrow originals. Lighter and translucent
 variants are derived with `color-mix()`.
+
+`palette` (default `red`) picks the accent palette: `red`, `green` or `blue`.
+The palettes share the dark tones and swap only the tinted tokens:
+
+| Token | `red` | `green` | `blue` |
+| --- | --- | --- | --- |
+| `--grey` | `#3d1621` | `#163d26` | `#16263d` |
+| `--purple` | `#7a1a2c` | `#1f5c3a` | `#1a3f7a` |
+| `--cyan` | `#943a4c` | `#3a7a52` | `#3a5c94` |
+| `--pink` | `#a8495b` | `#4f9466` | `#4f73a8` |
+| `--red` | `#a82a3c` | `#2e8a4c` | `#2a5aa8` |
+
+`palette_switch` (default `true`) adds a header button that cycles the
+palettes. The reader's choice is stored in `localStorage` and applied before
+the page renders, so code highlighting and Mermaid diagrams follow it too.
 
 ## Develop
 

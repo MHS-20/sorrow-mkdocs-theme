@@ -12,3 +12,8 @@ hljs_languages: []
 # Render ```mermaid blocks as diagrams in the Sorrow palette.
 mermaid: false
 mermaid_version: "11.4.1"
+
+# Accent palette: red, green or blue. palette_switch adds a header button
+# that cycles them and remembers the reader's choice.
+palette: red
+palette_switch: true
