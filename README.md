@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MHS-20/sorrow-mkdocs-theme/main/assets/sorrow-title.png" alt="Sorrow" width="600">
+  <img src="https://raw.githubusercontent.com/MHS-20/sorrow-mkdocs-theme/main/assets/sorrow-title2.png" alt="Sorrow" width="600">
 </p>
 
 <p align="center">
