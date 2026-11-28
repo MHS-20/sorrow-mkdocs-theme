@@ -17,14 +17,18 @@ Dracula's layout and replaces its colors and code highlighting.
 
 See the live demo at <https://mhs-20.github.io/sorrow-mkdocs-theme/>.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/MHS-20/sorrow-mkdocs-theme/main/assets/screenshot.png" alt="Sorrow theme screenshot" width="800">
-</p>
+The header button switches between three accent palettes:
+
+| Palette | Code | Diagrams |
+| --- | --- | --- |
+| `red` | <img src="https://raw.githubusercontent.com/MHS-20/sorrow-mkdocs-theme/main/assets/screenshots/red-code.jpg" alt="red palette, code" width="400"> | <img src="https://raw.githubusercontent.com/MHS-20/sorrow-mkdocs-theme/main/assets/screenshots/red-diagrams.jpg" alt="red palette, diagrams" width="400"> |
+| `green` | <img src="https://raw.githubusercontent.com/MHS-20/sorrow-mkdocs-theme/main/assets/screenshots/green-code.jpg" alt="green palette, code" width="400"> | <img src="https://raw.githubusercontent.com/MHS-20/sorrow-mkdocs-theme/main/assets/screenshots/green-diagrams.jpg" alt="green palette, diagrams" width="400"> |
+| `blue` | <img src="https://raw.githubusercontent.com/MHS-20/sorrow-mkdocs-theme/main/assets/screenshots/blue-code.jpg" alt="blue palette, code" width="400"> | <img src="https://raw.githubusercontent.com/MHS-20/sorrow-mkdocs-theme/main/assets/screenshots/blue-diagrams.jpg" alt="blue palette, diagrams" width="400"> |
 
 ## Install
 
 ```sh
-pip install mkdocs-sorrow-theme
+pip install "mkdocs-sorrow-theme>=0.3.0"
 ```
 
 Then, in `mkdocs.yml`:
@@ -34,17 +38,20 @@ theme:
   name: sorrow
   favicon: assets/favicon.ico  # optional; defaults to the Sorrow icon
   logo: assets/logo.png        # optional sidebar logo
+  mermaid: true                # optional, 0.3.0+; renders mermaid diagrams
+  palette: red                 # optional; red, green or blue
+  palette_switch: true         # optional; header button to cycle palettes
 ```
 
 `highlightjs` (default `true`) and `hljs_languages` control highlight.js.
 There is no footer and no option to load other highlight styles.
 
-`mermaid: true` (default `false`) renders fenced `mermaid` blocks as diagrams
+Since 0.3.0, `mermaid: true` (default `false`) renders fenced `mermaid` blocks as diagrams
 colored from the theme's tokens; `mermaid_version` (default `11.4.1`) picks the
 Mermaid release loaded from jsDelivr. Plain fences work as they are, and so
 does a `pymdownx.superfences` custom fence that outputs `<div class="mermaid">`.
 
-Scripts in `extra_javascript` keep their `type`, `async` and `defer` settings.
+Since 0.3.0, scripts in `extra_javascript` keep their `type`, `async` and `defer` settings.
 
 ## How it works
 
